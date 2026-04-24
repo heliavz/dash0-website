@@ -46,7 +46,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Utility classes we'll reuse */
+/* Utility classes */
 .container {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -57,7 +57,7 @@ body {
   padding: var(--section-padding);
 }
 
-/* Accent gradient text — used in headlines */
+/* Accent gradient text - headlines */
 .gradient-text {
   background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
   -webkit-background-clip: text;
@@ -82,4 +82,48 @@ body {
 .card:hover {
   background: var(--color-bg-card-hover);
   border-color: #3a3a3a;
+}
+
+/* Animated announcement bar */
+.announcement-bar {
+  background: linear-gradient(
+    90deg,
+    #c2410c,
+    #f97316,
+    #fb923c,
+    #f97316,
+    #c2410c
+  );
+  background-size: 300% 100%;
+  animation: shimmer 8s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Button gradient animation (subtler than announcement bar) */
+.btn-gradient {
+  background: linear-gradient(
+    90deg,
+    #ea6a0a,
+    #f97316,
+    #fb923c,
+    #f97316,
+    #ea6a0a
+  );
+  background-size: 300% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.btn-gradient:hover {
+  animation-duration: 1.5s;
 }
