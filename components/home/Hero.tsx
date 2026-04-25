@@ -1,18 +1,14 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import DotGrid from "@/components/ui/DotGrid";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden pt-32 pb-20">
-      {/* Background glow effects */}
+      {/* Background — subtle glow only, no dot grid */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Dot grid */}
-        <div className="dot-grid absolute inset-0" />
-        {/* Radial mask */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_50%,transparent_30%,#0a0a0a_100%)]" />
-        {/* Center orange glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#f97316]/8 rounded-full blur-[100px] animate-pulse" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#f97316]/5 rounded-full blur-[120px]" />
       </div>
 
       {/* Content */}
@@ -68,6 +64,13 @@ export default function Hero() {
 
       {/* Hero product screenshot */}
       <div className="relative z-10 w-full max-w-[1100px] mx-auto px-6 mt-16">
+        {/* Dot grid behind dashboard — right-contained, short height */}
+        <div className="absolute inset-x-6 inset-y-0 pointer-events-none overflow-hidden">
+          <DotGrid />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_80%_at_15%_50%,rgba(249,115,22,0.12)_0%,transparent_70%)]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a] opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-transparent to-[#0a0a0a] opacity-30" />
+        </div>
         <div className="relative rounded-2xl overflow-hidden border border-[#2a2a2a] shadow-2xl shadow-black/60">
           {/* Fake browser chrome */}
           <div className="bg-[#161616] border-b border-[#2a2a2a] px-4 py-3 flex items-center gap-2">

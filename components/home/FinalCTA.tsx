@@ -1,11 +1,21 @@
+import DotGrid from "@/components/ui/DotGrid";
+
 export default function FinalCTA() {
   return (
     <section className="relative py-32 border-t border-[#1f1f1f] overflow-hidden">
-      {/* Dot grid background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="dot-grid absolute inset-0" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_50%,transparent_20%,#0a0a0a_80%)]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#f97316]/6 rounded-full blur-[100px]" />
+      {/* Left: subtle glow only */}
+      <div className="absolute left-0 top-0 bottom-0 w-1/2 pointer-events-none">
+        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[400px] h-[400px] bg-[#f97316]/4 rounded-full blur-[120px]" />
+      </div>
+
+      {/* Right: dot grid — vertically centered around badge area */}
+      <div className="absolute right-8 top-[10%] bottom-[30%] w-1/2 pointer-events-none overflow-hidden">
+        <DotGrid />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_70%_50%,rgba(249,115,22,0.06)_0%,transparent_70%)]" />
+        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent" />
+        <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#0a0a0a] to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#0a0a0a] to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-8">
