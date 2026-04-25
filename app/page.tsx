@@ -3,6 +3,7 @@ import TrustedBy from "@/components/home/TrustedBy";
 import Features from "@/components/home/Features";
 import OpenStandards from "@/components/home/OpenStandards";
 import CostControl from "@/components/home/CostControl";
+import Testimonials from "@/components/home/Testimonials";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Features />
       <OpenStandards />
       <CostControl />
+      <Testimonials />
     </main>
   );
 }
