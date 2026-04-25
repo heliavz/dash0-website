@@ -73,22 +73,6 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
-
-        {/* G2 badges strip */}
-        <div className="flex items-center justify-center gap-12 mt-14 pt-10 border-t border-[#1f1f1f]">
-          {["Best Support", "Users Love Us", "High Performer"].map((label) => (
-            <div key={label} className="flex flex-col items-center gap-2">
-              <div className="w-14 h-14 rounded-full border border-[#2a2a2a] bg-[#111111] flex items-center justify-center">
-                <span className="text-[10px] font-bold text-[#f97316] text-center leading-tight px-1">
-                  G2
-                </span>
-              </div>
-              <span className="text-xs text-[#71717a] text-center">
-                {label}
-              </span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

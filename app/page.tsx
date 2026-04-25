@@ -4,6 +4,7 @@ import Features from "@/components/home/Features";
 import OpenStandards from "@/components/home/OpenStandards";
 import CostControl from "@/components/home/CostControl";
 import Testimonials from "@/components/home/Testimonials";
+import FinalCTA from "@/components/home/FinalCTA";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <OpenStandards />
       <CostControl />
       <Testimonials />
+      <FinalCTA />
     </main>
   );
 }

@@ -132,8 +132,8 @@ body {
 .dot-grid {
   background-image: radial-gradient(
     circle,
-    rgba(249, 115, 22, 0.4) 1px,
-    transparent 1px
+    rgba(249, 115, 22, 0.7) 1.5px,
+    transparent 1.5px
   );
   background-size: 24px 24px;
   animation: pulse-grid 4s ease-in-out infinite;
@@ -142,11 +142,11 @@ body {
 @keyframes pulse-grid {
   0%,
   100% {
-    opacity: 0.3;
+    opacity: 0.5;
     transform: scale(1);
   }
   50% {
-    opacity: 0.6;
+    opacity: 1;
     transform: scale(1.05);
   }
 }
