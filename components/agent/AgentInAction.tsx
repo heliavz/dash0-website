@@ -1,3 +1,5 @@
+import CircuitGrid from "@/components/ui/CircuitGrid";
+
 const actions = [
   {
     name: "The Seeker",
@@ -63,8 +65,12 @@ const actions = [
 
 export default function AgentInAction() {
   return (
-    <section className="py-24 border-b border-[#1f1f1f] bg-[#0d0d0d]">
-      <div className="max-w-[1200px] mx-auto px-8">
+    <section className="relative py-24 border-b border-[#1f1f1f] bg-[#0d0d0d] overflow-hidden">
+      {/* Circuit pattern background */}
+      <div className="absolute inset-0 pointer-events-none">
+        <CircuitGrid />
+      </div>
+      <div className="relative z-10 max-w-[1200px] mx-auto px-8">
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
