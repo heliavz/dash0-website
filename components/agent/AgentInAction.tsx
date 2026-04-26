@@ -10,7 +10,7 @@ const actions = [
     icon: "/dash0-website/images/agents/seeker.svg",
     scenario:
       "An engineer receives an alert and asks Agent0 what's going on. The Seeker analyzes recent traces, logs, and metrics to explain the issue — surfacing the affected service, related changes, and likely root cause in moments.",
-    image: "/dash0-website/images/agents/seeker-action.png",
+    image: "/dash0-website/images/agents/seeker-action.avif",
   },
   {
     name: "The Oracle",
@@ -20,7 +20,7 @@ const actions = [
     icon: "/dash0-website/images/agents/oracle.svg",
     scenario:
       'An engineer types: "Show me 95th percentile latency for checkout over the last hour." The Oracle instantly generates the correct PromQL, explains what it does, and shows the resulting graph — no syntax errors, no guesswork.',
-    image: "/dash0-website/images/agents/oracle-action.png",
+    image: "/dash0-website/images/agents/oracle-action.avif",
   },
   {
     name: "The Pathfinder",
@@ -30,7 +30,7 @@ const actions = [
     icon: "/dash0-website/images/agents/pathfinder.svg",
     scenario:
       "A developer asks Agent0 how to instrument a new Java service. The Pathfinder uses Dash0's integrations and documentation to provide clear, step-by-step guidance — helping the team get telemetry flowing in minutes, not hours.",
-    image: "/dash0-website/images/agents/pathfinder-action.png",
+    image: "/dash0-website/images/agents/pathfinder-action.avif",
   },
   {
     name: "The Threadweaver",
@@ -40,7 +40,7 @@ const actions = [
     icon: "/dash0-website/images/agents/threadweaver.svg",
     scenario:
       "A developer wonders why checkout latency keeps spiking intermittently. They ask Agent0 to analyze recent traces. The Threadweaver stitches together the full journey across services, highlighting where the slowdown begins.",
-    image: "/dash0-website/images/agents/threadweaver-action.png",
+    image: "/dash0-website/images/agents/threadweaver-action.avif",
   },
   {
     name: "The Artist",
@@ -50,7 +50,7 @@ const actions = [
     icon: "/dash0-website/images/agents/artist.svg",
     scenario:
       'A developer asks Agent0 to "Create a dashboard and alerts for my ProductCatalog service." The Artist analyzes existing telemetry, then generates a clean, best-practice dashboard with latency, error rate, and throughput.',
-    image: "/dash0-website/images/agents/artist-action.png",
+    image: "/dash0-website/images/agents/artist-action.avif",
   },
   {
     name: "The Lookout",
@@ -60,7 +60,7 @@ const actions = [
     icon: "/dash0-website/images/agents/lookout.svg",
     scenario:
       "A team notices rising abandonment rates. They ask Agent0 which sessions had performance issues during checkout. The Lookout surfaces sessions with poor Web Vitals, linking frontend slowness to a payment API bottleneck.",
-    image: "/dash0-website/images/agents/lookout-action.png",
+    image: "/dash0-website/images/agents/lookout-action.avif",
   },
 ];
 
