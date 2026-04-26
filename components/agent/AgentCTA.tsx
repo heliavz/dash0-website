@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import DotGrid from "@/components/ui/DotGrid";
+import DotGrid from "@/components/ui/LazyDotGrid";
 
 export default function AgentCTA() {
   return (

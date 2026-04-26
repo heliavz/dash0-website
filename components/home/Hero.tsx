@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import DotGrid from "@/components/ui/DotGrid";
+import DotGrid from "@/components/ui/LazyDotGrid";
 
 export default function Hero() {
   return (

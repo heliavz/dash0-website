@@ -1,4 +1,4 @@
-import DotGrid from "@/components/ui/DotGrid";
+import DotGrid from "@/components/ui/LazyDotGrid";
 
 export default function FinalCTA() {
   return (
