@@ -12,7 +12,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[860px] mx-auto px-6">
+      <div className="relative z-10 max-w-[900px] mx-auto px-6">
         {/* Category pill */}
         <div className="inline-flex items-center gap-2 bg-[#f97316]/10 border border-[#f97316]/20 rounded-full px-4 py-1.5 mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-[#f97316] animate-pulse" />
@@ -63,7 +63,7 @@ export default function Hero() {
       </div>
 
       {/* Hero product screenshot */}
-      <div className="relative z-10 w-full max-w-[1200px] mx-auto px-6 mt-16">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-12 mt-16">
         {/* Dot grid behind dashboard — right-contained, short height */}
         <div className="absolute inset-x-6 inset-y-0 pointer-events-none overflow-hidden">
           <DotGrid />

@@ -70,7 +70,7 @@ export default function AgentInAction() {
       <div className="absolute inset-0 pointer-events-none">
         <CircuitGrid />
       </div>
-      <div className="relative z-10 max-w-[1200px] mx-auto px-8">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-12">
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -91,7 +91,7 @@ export default function AgentInAction() {
               key={action.name}
               className={`group flex flex-col ${
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-              } items-center gap-12 bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300`}
+              } items-center gap-16 bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300`}
             >
               {/* Text side */}
               <div className="flex-1 min-w-0">

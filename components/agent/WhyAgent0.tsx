@@ -129,7 +129,7 @@ const pillars = [
 export default function WhyAgent0() {
   return (
     <section className="py-24 border-b border-[#262626] bg-[#0e0e0e]">
-      <div className="max-w-[1200px] mx-auto px-8">
+      <div className="max-w-[1440px] mx-auto px-12">
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

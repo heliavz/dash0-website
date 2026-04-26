@@ -15,7 +15,7 @@ export default function TrustedBy() {
 
   return (
     <section className="py-16 border-t border-[#262626]">
-      <div className="max-w-[1200px] mx-auto px-8">
+      <div className="max-w-[1440px] mx-auto px-12">
         {/* Label */}
         <p className="text-center text-lg md:text-xl font-semibold tracking-widest text-[#71717a] uppercase mb-10">
           Trusted by engineering teams at

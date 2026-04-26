@@ -18,7 +18,7 @@ export default function FinalCTA() {
         <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-8">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-12">
         {/* Top block — headline + G2 badges */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 mb-20">
           {/* Left: text */}

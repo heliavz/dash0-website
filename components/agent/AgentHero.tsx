@@ -15,7 +15,7 @@ export default function AgentHero() {
         <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-8">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-12">
         {/* Top: centered text */}
         <div className="text-center max-w-[760px] mx-auto mb-12">
           {/* Category pill */}

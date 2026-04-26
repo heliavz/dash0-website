@@ -13,7 +13,7 @@ export default function AgentCTA() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#f97316]/8 rounded-full blur-[120px]" />
       </div>
 
-      <div className="relative z-10 max-w-[900px] mx-auto px-8 text-center">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-12 text-center">
         {/* Category pill */}
         <div className="inline-flex items-center gap-2 bg-[#f97316]/10 border border-[#f97316]/20 rounded-full px-4 py-1.5 mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-[#f97316] animate-pulse" />
