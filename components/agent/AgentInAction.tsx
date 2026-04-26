@@ -1,4 +1,4 @@
-import CircuitGrid from "@/components/ui/LazyCircuitGrid";
+import CircuitGrid from "@/components/ui/CircuitGrid";
 import AnimatedRow from "@/components/ui/AnimatedRow";
 
 const actions = [
