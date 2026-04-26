@@ -5,7 +5,7 @@ import DotGrid from "@/components/ui/DotGrid";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden pt-32 pb-20">
+    <section className="relative flex flex-col items-center text-center overflow-hidden pt-32 pb-32">
       {/* Background — subtle glow only, no dot grid */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#f97316]/5 rounded-full blur-[120px]" />
