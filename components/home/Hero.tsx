@@ -74,7 +74,7 @@ export default function Hero() {
         <div className="relative rounded-2xl overflow-hidden border border-[#2a2a2a] shadow-2xl shadow-black/60">
           <div className="relative w-full aspect-[16/9]">
             <Image
-              src="/dash0-website/images/hero-dashboard.AVIF"
+              src="/dash0-website/images/hero-dashboard.avif"
               alt="Dash0 observability platform — service map and trace explorer"
               fill
               className="object-cover object-top"
