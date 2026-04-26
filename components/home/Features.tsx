@@ -640,7 +640,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-24 border-t border-[#1f1f1f]">
+    <section className="py-24 border-t border-[#262626]">
       <div className="max-w-[1200px] mx-auto px-8">
         {/* Section header */}
         <div className="text-center mb-16">
@@ -661,7 +661,7 @@ export default function Features() {
               key={feature.pill}
               className={`group flex flex-col ${
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              } items-center gap-10 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-8 md:p-10 transition-all duration-300`}
+              } items-center gap-10 bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 md:p-10 transition-all duration-300`}
             >
               {/* Text */}
               <div className="flex-1 min-w-0">

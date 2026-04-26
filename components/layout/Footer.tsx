@@ -35,10 +35,10 @@ const socialLinks = ["GitHub", "LinkedIn", "X", "YouTube"];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#1f1f1f] bg-[#0a0a0a] pt-20 pb-10">
+    <footer className="border-t border-[#262626] bg-[#0a0a0a] pt-20 pb-10">
       <div className="max-w-[1440px] mx-auto px-10">
         {/* Top row */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-12 pb-14 border-b border-[#1f1f1f]">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-12 pb-14 border-b border-[#262626]">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <span className="text-white font-semibold text-xl tracking-tight">

@@ -65,7 +65,7 @@ const actions = [
 
 export default function AgentInAction() {
   return (
-    <section className="relative py-24 border-b border-[#1f1f1f] bg-[#0d0d0d] overflow-hidden">
+    <section className="relative py-24 border-b border-[#262626] bg-[#0e0e0e] overflow-hidden">
       {/* Circuit pattern background */}
       <div className="absolute inset-0 pointer-events-none">
         <CircuitGrid />
@@ -91,7 +91,7 @@ export default function AgentInAction() {
               key={action.name}
               className={`group flex flex-col ${
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-              } items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300`}
+              } items-center gap-12 bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300`}
             >
               {/* Text side */}
               <div className="flex-1 min-w-0">
@@ -139,7 +139,7 @@ export default function AgentInAction() {
                   } as React.CSSProperties
                 }
               >
-                <div className="relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center">
+                <div className="relative w-full aspect-[4/3] bg-[#0e0e0e] flex items-center justify-center">
                   <img
                     src={action.image}
                     alt={`${action.name} — ${action.role}`}

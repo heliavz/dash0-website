@@ -69,7 +69,7 @@ const agents = [
 
 export default function AgentGuild() {
   return (
-    <section className="py-24 border-b border-[#1f1f1f]">
+    <section className="py-24 border-b border-[#262626]">
       <div className="max-w-[1200px] mx-auto px-8">
         {/* Section header */}
         <div className="text-center mb-16">
@@ -87,7 +87,7 @@ export default function AgentGuild() {
           {agents.map((agent) => (
             <div
               key={agent.name}
-              className="bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center"
+              className="bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center"
               style={{ borderTopColor: agent.color + "40" }}
             >
               {/* Icon */}

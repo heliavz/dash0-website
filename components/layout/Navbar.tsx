@@ -197,7 +197,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#111111] border-t border-[#1f1f1f] px-6 py-4 space-y-3">
+        <div className="md:hidden bg-[#111111] border-t border-[#262626] px-6 py-4 space-y-3">
           <p className="text-xs font-semibold tracking-widest text-[#71717a] uppercase">
             Use Cases
           </p>
@@ -222,7 +222,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <div className="pt-4 flex flex-col gap-3 border-t border-[#1f1f1f]">
+          <div className="pt-4 flex flex-col gap-3 border-t border-[#262626]">
             {["Pricing", "Docs", "Resources", "About"].map((item) => (
               <Link
                 key={item}

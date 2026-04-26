@@ -63,7 +63,7 @@ export default function Hero() {
       </div>
 
       {/* Hero product screenshot */}
-      <div className="relative z-10 w-full max-w-[1100px] mx-auto px-6 mt-16">
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto px-6 mt-16">
         {/* Dot grid behind dashboard — right-contained, short height */}
         <div className="absolute inset-x-6 inset-y-0 pointer-events-none overflow-hidden">
           <DotGrid />

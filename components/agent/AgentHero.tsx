@@ -4,7 +4,7 @@ import DotGrid from "@/components/ui/DotGrid";
 
 export default function AgentHero() {
   return (
-    <section className="relative py-24 border-b border-[#1f1f1f] overflow-hidden">
+    <section className="relative py-24 border-b border-[#262626] overflow-hidden">
       {/* Background dot grid - bottom half only */}
       <div className="absolute bottom-0 left-0 right-0 h-1/2 pointer-events-none overflow-hidden">
         <DotGrid />

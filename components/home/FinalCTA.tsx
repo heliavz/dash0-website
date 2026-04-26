@@ -2,7 +2,7 @@ import DotGrid from "@/components/ui/DotGrid";
 
 export default function FinalCTA() {
   return (
-    <section className="relative py-32 border-t border-[#1f1f1f] overflow-hidden">
+    <section className="relative py-32 border-t border-[#262626] overflow-hidden">
       {/* Left: subtle glow only */}
       <div className="absolute left-0 top-0 bottom-0 w-1/2 pointer-events-none">
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[400px] h-[400px] bg-[#f97316]/4 rounded-full blur-[120px]" />

@@ -27,7 +27,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-24 border-t border-[#1f1f1f]">
+    <section className="py-24 border-t border-[#262626]">
       <div className="max-w-[1200px] mx-auto px-8">
         {/* Section header */}
         <div className="text-center mb-16">
@@ -45,7 +45,7 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="relative flex flex-col rounded-2xl border border-[#1f1f1f] hover:border-[#2a2a2a] bg-[#111111] p-8 transition-all duration-300"
+              className="relative flex flex-col rounded-2xl border border-[#262626] hover:border-[#2a2a2a] bg-[#111111] p-8 transition-all duration-300"
             >
               {/* Quote mark */}
               <span className="text-5xl text-[#f97316]/20 font-serif leading-none mb-4 block">
@@ -58,7 +58,7 @@ export default function Testimonials() {
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3 pt-6 border-t border-[#1f1f1f]">
+              <div className="flex items-center gap-3 pt-6 border-t border-[#262626]">
                 {/* Avatar */}
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold shrink-0 bg-[#2a2a2a] text-white">
                   {t.initial}

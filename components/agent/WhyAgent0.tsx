@@ -128,7 +128,7 @@ const pillars = [
 
 export default function WhyAgent0() {
   return (
-    <section className="py-24 border-b border-[#1f1f1f] bg-[#0d0d0d]">
+    <section className="py-24 border-b border-[#262626] bg-[#0e0e0e]">
       <div className="max-w-[1200px] mx-auto px-8">
         {/* Section header */}
         <div className="text-center mb-16">
@@ -147,7 +147,7 @@ export default function WhyAgent0() {
           {pillars.map((pillar) => (
             <div
               key={pillar.headline}
-              className="bg-[#212121] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300 flex flex-col items-center text-center"
+              className="bg-[#212121] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300 flex flex-col items-center text-center"
             >
               {/* Icon */}
               <div className="mb-8">{pillar.icon}</div>

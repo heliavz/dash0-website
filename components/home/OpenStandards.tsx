@@ -58,7 +58,7 @@ spec:
 
 export default function OpenStandards() {
   return (
-    <section className="py-24 border-t border-[#1f1f1f]">
+    <section className="py-24 border-t border-[#262626]">
       <div className="max-w-[1200px] mx-auto px-8">
         {/* Section header */}
         <div className="text-center mb-16">
@@ -78,10 +78,10 @@ export default function OpenStandards() {
           {standards.map((item) => (
             <div
               key={item.pill}
-              className="group bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl overflow-hidden transition-all duration-300 flex flex-col"
+              className="group bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl overflow-hidden transition-all duration-300 flex flex-col"
             >
               {/* Code block visual */}
-              <div className="relative bg-[#0d0d0d] border-b border-[#1f1f1f] p-5 flex-1">
+              <div className="relative bg-[#0e0e0e] border-b border-[#262626] p-5 flex-1">
                 {/* Fake window chrome */}
                 <div className="flex items-center gap-1.5 mb-4">
                   <div className="w-2.5 h-2.5 rounded-full bg-[#2a2a2a]" />
