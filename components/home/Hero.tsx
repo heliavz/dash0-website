@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
 
         {/* Social proof line */}
-        <p className="text-sm text-[#71717a]">
+        <p className="font-medium text-[#71717a]">
           Trusted by engineers at{" "}
           <span className="text-[#a1a1aa] font-medium">Vercel</span>,{" "}
           <span className="text-[#a1a1aa] font-medium">Porsche Digital</span>,{" "}

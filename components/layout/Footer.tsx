@@ -35,25 +35,25 @@ const socialLinks = ["GitHub", "LinkedIn", "X", "YouTube"];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#1f1f1f] bg-[#0a0a0a] pt-16 pb-8">
+    <footer className="border-t border-[#1f1f1f] bg-[#0a0a0a] pt-20 pb-10">
       <div className="max-w-[1440px] mx-auto px-10">
         {/* Top row */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 pb-12 border-b border-[#1f1f1f]">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-12 pb-14 border-b border-[#1f1f1f]">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <span className="text-white font-semibold text-lg tracking-tight">
+            <span className="text-white font-semibold text-xl tracking-tight">
               dash<span className="text-[#f97316]">0</span>
             </span>
-            <p className="mt-3 text-sm text-[#71717a] leading-relaxed">
+            <p className="mt-4 text-base text-[#71717a] leading-relaxed">
               OpenTelemetry-native observability. Simple to switch. Built to
               last.
             </p>
-            <div className="flex items-center gap-4 mt-5">
+            <div className="flex items-center gap-5 mt-6">
               {socialLinks.map((platform) => (
                 <a
                   key={platform}
                   href="#"
-                  className="text-sm text-[#71717a] hover:text-white transition-colors"
+                  className="text-base text-[#71717a] hover:text-white transition-colors"
                 >
                   {platform}
                 </a>
@@ -64,15 +64,15 @@ export default function Footer() {
           {/* Link columns */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <p className="text-xs font-semibold tracking-widest text-[#71717a] uppercase mb-4">
+              <p className="text-sm font-semibold tracking-widest text-[#71717a] uppercase mb-5">
                 {category}
               </p>
-              <ul className="space-y-3">
+              <ul className="space-y-3.5">
                 {links.map((link) => (
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-sm text-[#a1a1aa] hover:text-white transition-colors"
+                      className="text-base text-white hover:text-[#a1a1aa] transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -84,9 +84,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom row */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8">
-          <p className="text-sm text-[#71717a]">©2026 Dash0 Inc.</p>
-          <div className="flex items-center gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-10">
+          <p className="text-base text-[#71717a]">©2026 Dash0 Inc.</p>
+          <div className="flex items-center gap-8">
             {[
               "Terms and Conditions",
               "Privacy Policy",
@@ -95,7 +95,7 @@ export default function Footer() {
               <Link
                 key={item}
                 href="#"
-                className="text-sm text-[#71717a] hover:text-white transition-colors"
+                className="text-base text-[#71717a] hover:text-white transition-colors"
               >
                 {item}
               </Link>
