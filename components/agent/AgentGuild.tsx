@@ -3,6 +3,7 @@ const agents = [
     name: "The Seeker",
     role: "Troubleshooting & Incident Triage",
     color: "#3b82f6",
+    textColor: "#3b82f6",
     icon: "/dash0-website/images/agents/seeker.svg",
     quote:
       "No anomaly can hide. The Seeker traces every ripple in your system, hunts down root causes, and surfaces what others can't see.",
@@ -13,6 +14,7 @@ const agents = [
     name: "The Oracle",
     role: "PromQL Query Assistant",
     color: "#f97316",
+    textColor: "#f97316",
     icon: "/dash0-website/images/agents/oracle.svg",
     quote:
       "The Oracle speaks the language of PromQL fluently. Ask, and it reveals the logic behind the query — with clarity and insight.",
@@ -23,6 +25,7 @@ const agents = [
     name: "The Pathfinder",
     role: "Onboarding & Instrumentation Guide",
     color: "#22c55e",
+    textColor: "#22c55e",
     icon: "/dash0-website/images/agents/pathfinder.svg",
     quote:
       "A trusted guide for every new journey. The Pathfinder leads your apps into the world of OpenTelemetry and Dash0 — step by step.",
@@ -33,6 +36,7 @@ const agents = [
     name: "The Threadweaver",
     role: "Trace Analyst & Narrative Builder",
     color: "#14b8a6",
+    textColor: "#14b8a6",
     icon: "/dash0-website/images/agents/threadweaver.svg",
     quote:
       "The Threadweaver connects every span like strands of fate — revealing how your system's stories truly unfold.",
@@ -43,6 +47,7 @@ const agents = [
     name: "The Artist",
     role: "Dashboard & Alert Builder",
     color: "#94a3b8",
+    textColor: "#94a3b8",
     icon: "/dash0-website/images/agents/artist.svg",
     quote:
       "The Artist shapes data into vision. With steady hands, it designs dashboards and creates alert rules that bring order to the chaos.",
@@ -52,7 +57,8 @@ const agents = [
   {
     name: "The Lookout",
     role: "Web Performance & User Experience",
-    color: "#b45309",
+    color: "#125f12",
+    textColor: "#709f70",
     icon: "/dash0-website/images/agents/lookout.svg",
     quote:
       "The Lookout watches over every user's journey — tracking Web Vitals, JavaScript errors, and session flows to reveal what real users experience.",
@@ -97,7 +103,7 @@ export default function AgentGuild() {
               <span
                 className="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4"
                 style={{
-                  color: agent.color,
+                  color: agent.textColor,
                   backgroundColor: agent.color + "15",
                   border: `1px solid ${agent.color}30`,
                 }}
