@@ -35,51 +35,30 @@ export default function FinalCTA() {
           </div>
 
           {/* Right: G2 badges */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-1">
             {[
-              { top: "FALL 2025", label: "Best\nSupport", color: "#22c55e" },
-              { top: "MILESTONE", label: "Users\nLove Us", color: "#f97316" },
-              { top: "FALL 2025", label: "Best\nEst. ROI", color: "#3b82f6" },
-            ].map((badge, i) => (
-              <div
-                key={i}
-                className="relative flex flex-col items-center w-[90px]"
-              >
-                {/* Shield shape */}
-                <div
-                  className="w-[80px] bg-white rounded-t-lg pt-2 pb-4 px-2 flex flex-col items-center"
-                  style={{
-                    clipPath: "polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%)",
-                  }}
-                >
-                  {/* Top bar */}
-                  <div
-                    className="w-full rounded-sm py-0.5 mb-1 flex items-center justify-between px-1"
-                    style={{ backgroundColor: badge.color }}
-                  >
-                    <span className="text-[7px] text-white font-bold">
-                      {badge.top}
-                    </span>
-                    <span className="text-[7px] text-white font-black">G</span>
-                  </div>
-                  {/* Label */}
-                  <p className="text-[11px] font-black text-gray-900 text-center leading-tight mt-1 whitespace-pre-line">
-                    {badge.label}
-                  </p>
-                  {/* Stars */}
-                  <div className="flex gap-0.5 mt-1">
-                    {[...Array(5)].map((_, s) => (
-                      <span
-                        key={s}
-                        className="text-[8px]"
-                        style={{ color: badge.color }}
-                      >
-                        ★
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              {
+                src: "/dash0-website/images/badges/g2-best-support.svg",
+                alt: "G2 Best Support Fall 2025",
+                size: "h-24 w-24",
+              },
+              {
+                src: "/dash0-website/images/badges/g2-users-love-us.svg",
+                alt: "G2 Users Love Us",
+                size: "h-32 w-32",
+              },
+              {
+                src: "/dash0-website/images/badges/g2-best-roi.svg",
+                alt: "G2 Best Estimated ROI Fall 2025",
+                size: "h-24 w-24",
+              },
+            ].map((badge) => (
+              <img
+                key={badge.alt}
+                src={badge.src}
+                alt={badge.alt}
+                className={`${badge.size} object-contain`}
+              />
             ))}
           </div>
         </div>
@@ -96,9 +75,9 @@ export default function FinalCTA() {
 
             <a
               href="#"
-              className="text-sm text-[#a1a1aa] hover:text-white transition-colors underline underline-offset-4"
+              className="flex items-center gap-2 text-[#a1a1aa] hover:text-white border border-[#2a2a2a] hover:border-[#3a3a3a] px-7 py-3 rounded-xl text-base transition-all"
             >
-              Book a demo
+              Book a Demo
             </a>
           </div>
           <p className="text-xs text-[#71717a] mt-4">

@@ -1,3 +1,5 @@
+import AnimatedRow from "@/components/ui/AnimatedRow";
+
 const featureSVGs = {
   Logs: (
     <svg
@@ -5,9 +7,7 @@ const featureSVGs = {
       className="w-full h-full"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Background */}
       <rect width="400" height="220" fill="#0d0d0d" />
-      {/* Search bar */}
       <rect
         x="20"
         y="20"
@@ -55,7 +55,6 @@ const featureSVGs = {
       >
         FILTER
       </text>
-      {/* Log rows */}
       {[
         { y: 68, level: "INFO", color: "#22c55e", width: 180 },
         { y: 90, level: "WARN", color: "#f59e0b", width: 220 },
@@ -121,7 +120,6 @@ const featureSVGs = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect width="400" height="220" fill="#0d0d0d" />
-      {/* Metric cards */}
       {[
         {
           x: 20,
@@ -195,7 +193,6 @@ const featureSVGs = {
           )}
         </g>
       ))}
-      {/* Main chart area */}
       <rect
         x="20"
         y="80"
@@ -206,7 +203,6 @@ const featureSVGs = {
         stroke="#2a2a2a"
         strokeWidth="1"
       />
-      {/* Y axis lines */}
       {[0, 1, 2, 3].map((i) => (
         <line
           key={i}
@@ -218,7 +214,6 @@ const featureSVGs = {
           strokeWidth="1"
         />
       ))}
-      {/* Chart line - metrics */}
       <defs>
         <linearGradient id="metricGrad" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#f97316" stopOpacity="0.3" />
@@ -235,7 +230,6 @@ const featureSVGs = {
         d="M40,180 C70,170 90,140 120,135 C150,130 170,145 200,120 C230,95 250,130 280,110 C310,90 340,100 368,88 L368,196 L40,196 Z"
         fill="url(#metricGrad)"
       />
-      {/* Second line */}
       <path
         d="M40,160 C70,165 90,155 120,158 C150,161 170,150 200,155 C230,160 250,145 280,150 C310,155 340,148 368,145"
         fill="none"
@@ -252,7 +246,6 @@ const featureSVGs = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect width="400" height="220" fill="#0d0d0d" />
-      {/* Header */}
       <rect
         x="20"
         y="16"
@@ -283,7 +276,6 @@ const featureSVGs = {
       >
         124ms
       </text>
-      {/* Trace spans - waterfall */}
       {[
         {
           y: 52,
@@ -389,7 +381,6 @@ const featureSVGs = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect width="400" height="220" fill="#0d0d0d" />
-      {/* Top row - 3 small panels */}
       {[0, 1, 2].map((i) => (
         <g key={i}>
           <rect
@@ -423,7 +414,6 @@ const featureSVGs = {
           </text>
         </g>
       ))}
-      {/* Bottom left - bar chart */}
       <rect
         x="20"
         y="88"
@@ -457,7 +447,6 @@ const featureSVGs = {
           opacity="0.4"
         />
       ))}
-      {/* Bottom right - donut */}
       <rect
         x="252"
         y="88"
@@ -524,15 +513,14 @@ const featureSVGs = {
   ),
   Integrations: (
     <svg
-      viewBox="0 0 400 220"
+      viewBox="0 0 400 200"
       className="w-full h-full"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="400" height="220" fill="#0d0d0d" />
-      {/* Center node - Dash0 */}
+      <rect width="400" height="200" fill="#0d0d0d" />
       <circle
         cx="200"
-        cy="110"
+        cy="100"
         r="28"
         fill="#161616"
         stroke="#f97316"
@@ -540,7 +528,7 @@ const featureSVGs = {
       />
       <text
         x="200"
-        y="107"
+        y="97"
         textAnchor="middle"
         fill="white"
         fontSize="9"
@@ -551,7 +539,7 @@ const featureSVGs = {
       </text>
       <text
         x="200"
-        y="119"
+        y="109"
         textAnchor="middle"
         fill="#f97316"
         fontSize="7"
@@ -559,23 +547,22 @@ const featureSVGs = {
       >
         OTel native
       </text>
-      {/* Satellite nodes */}
       {[
-        { x: 60, y: 50, label: "Kubernetes", color: "#3b82f6" },
-        { x: 340, y: 50, label: "Prometheus", color: "#f59e0b" },
-        { x: 50, y: 170, label: "AWS", color: "#f97316" },
-        { x: 350, y: 170, label: "Grafana", color: "#f97316" },
+        { x: 60, y: 40, label: "Kubernetes", color: "#3b82f6" },
+        { x: 340, y: 40, label: "Prometheus", color: "#f59e0b" },
+        { x: 50, y: 160, label: "AWS", color: "#f97316" },
+        { x: 350, y: 160, label: "Grafana", color: "#f97316" },
         { x: 200, y: 20, label: "GitHub", color: "#a1a1aa" },
-        { x: 200, y: 200, label: "PagerDuty", color: "#22c55e" },
-        { x: 80, y: 110, label: "Datadog", color: "#71717a" },
-        { x: 320, y: 110, label: "Slack", color: "#8b5cf6" },
+        { x: 200, y: 180, label: "PagerDuty", color: "#22c55e" },
+        { x: 80, y: 100, label: "Datadog", color: "#71717a" },
+        { x: 320, y: 100, label: "Slack", color: "#8b5cf6" },
       ].map((node, i) => (
         <g key={i}>
           <line
             x1={node.x}
             y1={node.y}
             x2="200"
-            y2="110"
+            y2="100"
             stroke="#2a2a2a"
             strokeWidth="1"
             strokeDasharray="4 3"
@@ -640,9 +627,8 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-24 border-t border-[#262626]">
+    <section className="py-24 border-t border-[#1f1f1f]">
       <div className="max-w-[1440px] mx-auto px-12">
-        {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Observability in Minutes,{" "}
@@ -654,33 +640,31 @@ export default function Features() {
           </p>
         </div>
 
-        {/* Feature rows */}
         <div className="space-y-6">
           {features.map((feature, index) => (
-            <div
-              key={feature.pill}
-              className={`group flex flex-col ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              } items-center gap-10 bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 md:p-10 transition-all duration-300`}
-            >
-              {/* Text */}
-              <div className="flex-1 min-w-0">
-                <span className="inline-block text-xs font-semibold tracking-widest text-[#f97316] uppercase border border-[#f97316]/20 bg-[#f97316]/10 rounded-full px-3 py-1 mb-4">
-                  {feature.pill}
-                </span>
-                <h3 className="text-2xl font-bold text-white mb-3 leading-snug">
-                  {feature.headline}
-                </h3>
-                <p className="text-[#a1a1aa] leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
+            <AnimatedRow key={feature.pill} delay={index * 0.05}>
+              <div
+                className={`group flex flex-col ${
+                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                } items-center gap-10 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-8 md:p-10 transition-all duration-300`}
+              >
+                <div className="flex-1 min-w-0">
+                  <span className="inline-block text-xs font-semibold tracking-widest text-[#f97316] uppercase border border-[#f97316]/20 bg-[#f97316]/10 rounded-full px-3 py-1 mb-4">
+                    {feature.pill}
+                  </span>
+                  <h3 className="text-2xl font-bold text-white mb-3 leading-snug">
+                    {feature.headline}
+                  </h3>
+                  <p className="text-[#a1a1aa] leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
 
-              {/* SVG Visual */}
-              <div className="flex-1 w-full rounded-xl overflow-hidden border border-[#2a2a2a]">
-                {featureSVGs[feature.pill as keyof typeof featureSVGs]}
+                <div className="flex-1 w-full rounded-xl overflow-hidden border border-[#2a2a2a]">
+                  {featureSVGs[feature.pill as keyof typeof featureSVGs]}
+                </div>
               </div>
-            </div>
+            </AnimatedRow>
           ))}
         </div>
       </div>

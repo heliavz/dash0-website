@@ -96,34 +96,8 @@ export default function OpenStandards() {
                   </span>
                 </div>
                 {/* Code */}
-                <pre className="text-[11px] leading-relaxed font-mono text-[#a1a1aa] overflow-hidden">
-                  {item.code.split("\n").map((line, i) => {
-                    const isKey = line.match(/^[\s]*([\w-]+):/);
-                    const isComment = line.trim().startsWith("#");
-                    const isValue = line.includes(": ");
-                    return (
-                      <div key={i}>
-                        {isComment ? (
-                          <span className="text-[#71717a]">{line}</span>
-                        ) : isKey ? (
-                          <span>
-                            <span className="text-[#f97316]/80">
-                              {line.match(/^(\s*)([\w-]+:)/)?.[2] || ""}
-                            </span>
-                            <span className="text-[#a1a1aa]">
-                              {line.replace(
-                                /^(\s*)([\w-]+:)/,
-                                (_, spaces) => spaces,
-                              )}
-                            </span>
-                          </span>
-                        ) : (
-                          <span className="text-[#71717a]">{line}</span>
-                        )}
-                        {"\n"}
-                      </div>
-                    );
-                  })}
+                <pre className="text-[12px] leading-relaxed font-mono text-[#a1a1aa] overflow-hidden whitespace-pre">
+                  {item.code}
                 </pre>
               </div>
 

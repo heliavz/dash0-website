@@ -72,21 +72,6 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-transparent to-[#0a0a0a] opacity-30" />
         </div>
         <div className="relative rounded-2xl overflow-hidden border border-[#2a2a2a] shadow-2xl shadow-black/60">
-          {/* Fake browser chrome */}
-          <div className="bg-[#161616] border-b border-[#2a2a2a] px-4 py-3 flex items-center gap-2">
-            <div className="flex items-center gap-1.5">
-              <div className="w-3 h-3 rounded-full bg-[#2a2a2a]" />
-              <div className="w-3 h-3 rounded-full bg-[#2a2a2a]" />
-              <div className="w-3 h-3 rounded-full bg-[#2a2a2a]" />
-            </div>
-            <div className="flex-1 mx-4">
-              <div className="bg-[#0f0f0f] border border-[#2a2a2a] rounded-md px-3 py-1 text-xs text-[#71717a] max-w-[300px] mx-auto text-center">
-                app.dash0.com
-              </div>
-            </div>
-          </div>
-
-          {/* Dashboard mockup */}
           <div className="relative w-full aspect-[16/9]">
             <Image
               src="/dash0-website/images/hero-dashboard.AVIF"
