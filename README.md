@@ -12,7 +12,7 @@ A full rebuild of [dash0.com](https://www.dash0.com/), the OpenTelemetry-native 
 
 ### 1. Homepage - full rebuild
 
-![Homepage](./screenshots/homepage.png)
+![Homepage](./screenshots/Homepage.png)
 
 The full marketing homepage including hero, social proof strip, alternating feature rows, open standards section, cost control section, customer testimonials, and the final CTA with G2 badges. Matches Dash0's brand language: full-width 1440px layout, dark theme with `#f97316` orange accent, custom canvas-based dot grid animation behind the hero dashboard and final CTA.
 
