@@ -44,7 +44,7 @@ export default function Footer() {
             <span className="text-white font-semibold text-xl tracking-tight">
               dash<span className="text-[#f97316]">0</span>
             </span>
-            <p className="mt-4 text-base text-[#71717a] leading-relaxed">
+            <p className="mt-4 text-base text-[#8b8b95] leading-relaxed">
               OpenTelemetry-native observability. Simple to switch. Built to
               last.
             </p>
@@ -53,7 +53,7 @@ export default function Footer() {
                 <a
                   key={platform}
                   href="#"
-                  className="text-base text-[#71717a] hover:text-white transition-colors"
+                  className="text-base text-[#8b8b95] hover:text-white transition-colors"
                 >
                   {platform}
                 </a>
@@ -64,7 +64,7 @@ export default function Footer() {
           {/* Link columns */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <p className="text-sm font-semibold tracking-widest text-[#71717a] uppercase mb-5">
+              <p className="text-sm font-semibold tracking-widest text-[#8b8b95] uppercase mb-5">
                 {category}
               </p>
               <ul className="space-y-3.5">
@@ -85,7 +85,7 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-10">
-          <p className="text-base text-[#71717a]">©2026 Dash0 Inc.</p>
+          <p className="text-base text-[#8b8b95]">©2026 Dash0 Inc.</p>
           <div className="flex items-center gap-8">
             {[
               "Terms and Conditions",
@@ -95,7 +95,7 @@ export default function Footer() {
               <Link
                 key={item}
                 href="#"
-                className="text-base text-[#71717a] hover:text-white transition-colors"
+                className="text-base text-[#8b8b95] hover:text-white transition-colors"
               >
                 {item}
               </Link>

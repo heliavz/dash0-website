@@ -80,7 +80,7 @@ export default function FinalCTA() {
               Book a Demo
             </a>
           </div>
-          <p className="text-xs text-[#71717a] mt-4">
+          <p className="text-xs text-[#8b8b95] mt-4">
             No credit card required · 14-day free trial · Cancel anytime
           </p>
         </div>

@@ -117,7 +117,7 @@ export default function AgentGuild() {
               </h3>
 
               {/* Quote */}
-              <p className="text-base italic text-[#71717a] leading-relaxed mb-4">
+              <p className="text-base italic text-[#8b8b95] leading-relaxed mb-4">
                 "{agent.quote}"
               </p>
 

@@ -77,6 +77,8 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
               <div className="relative">
                 <button
+                  aria-haspopup="menu"
+                  aria-expanded={productOpen}
                   className="flex items-center gap-1.5 text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-md hover:bg-white/5"
                   onMouseEnter={() => setProductOpen(true)}
                   onMouseLeave={() => setProductOpen(false)}
@@ -98,7 +100,7 @@ export default function Navbar() {
                   >
                     <div className="grid grid-cols-2 gap-6">
                       <div>
-                        <p className="text-xs font-semibold tracking-widest text-[#71717a] uppercase mb-3">
+                        <p className="text-xs font-semibold tracking-widest text-[#8b8b95] uppercase mb-3">
                           Use Cases
                         </p>
                         <ul className="space-y-1">
@@ -115,7 +117,7 @@ export default function Navbar() {
                         </ul>
                       </div>
                       <div>
-                        <p className="text-xs font-semibold tracking-widest text-[#71717a] uppercase mb-3">
+                        <p className="text-xs font-semibold tracking-widest text-[#8b8b95] uppercase mb-3">
                           Platform Features
                         </p>
                         <ul className="space-y-1">
@@ -146,18 +148,27 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              <button className="flex items-center gap-1.5 text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-md hover:bg-white/5">
+              <button
+                aria-haspopup="menu"
+                className="flex items-center gap-1.5 text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-md hover:bg-white/5"
+              >
                 Resources <ChevronDown size={15} />
               </button>
-              <button className="flex items-center gap-1.5 text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-md hover:bg-white/5">
+              <button
+                aria-haspopup="menu"
+                className="flex items-center gap-1.5 text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-md hover:bg-white/5"
+              >
                 About <ChevronDown size={15} />
               </button>
             </div>
 
             {/* Right side */}
             <div className="hidden md:flex items-center gap-3">
-              <button className="flex items-center gap-2 text-sm text-[#71717a] hover:text-white transition-colors bg-white/5 hover:bg-white/10 border border-[#2a2a2a] rounded-md px-3 py-2">
-                <Search size={15} />
+              <button
+                aria-label="Search documentation (Ctrl+K)"
+                className="flex items-center gap-2 text-sm text-[#8b8b95] hover:text-white transition-colors bg-white/5 hover:bg-white/10 border border-[#2a2a2a] rounded-md px-3 py-2"
+              >
+                <Search size={15} aria-hidden="true" />
                 <span className="hidden lg:inline">Search</span>
                 <kbd className="hidden lg:inline text-xs bg-[#2a2a2a] px-1.5 py-0.5 rounded font-mono">
                   Ctrl K
@@ -186,10 +197,16 @@ export default function Navbar() {
 
             {/* Mobile menu button */}
             <button
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
               className="md:hidden text-[#a1a1aa] hover:text-white"
               onClick={() => setMobileOpen(!mobileOpen)}
             >
-              {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+              {mobileOpen ? (
+                <X size={22} aria-hidden="true" />
+              ) : (
+                <Menu size={22} aria-hidden="true" />
+              )}
             </button>
           </div>
         </div>
@@ -198,7 +215,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-[#111111] border-t border-[#262626] px-6 py-4 space-y-3">
-          <p className="text-xs font-semibold tracking-widest text-[#71717a] uppercase">
+          <p className="text-xs font-semibold tracking-widest text-[#8b8b95] uppercase">
             Use Cases
           </p>
           {productLinks.useCases.map((link) => (
@@ -210,7 +227,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <p className="text-xs font-semibold tracking-widest text-[#71717a] uppercase pt-2">
+          <p className="text-xs font-semibold tracking-widest text-[#8b8b95] uppercase pt-2">
             Platform Features
           </p>
           {productLinks.platformFeatures.map((link) => (

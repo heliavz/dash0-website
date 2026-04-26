@@ -1,0 +1,1531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agent-hero.avif"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/seeker.svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/oracle.svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/pathfinder.svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/threadweaver.svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/artist.svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/lookout.svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/seeker-action.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/oracle-action.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/pathfinder-action.png"
+    />
+    <link
+      rel="stylesheet"
+      href="/dash0-website/_next/static/css/cd0f4a6938998407.css"
+      data-precedence="next"
+    />
+    <link
+      rel="preload"
+      as="script"
+      fetchpriority="low"
+      href="/dash0-website/_next/static/chunks/webpack-20bfbccbe1ea0056.js"
+    />
+    <script
+      src="/dash0-website/_next/static/chunks/fd9d1056-1f1f859026f5f0fa.js"
+      async=""
+    ></script>
+    <script
+      src="/dash0-website/_next/static/chunks/117-bb632e6d79b4a058.js"
+      async=""
+    ></script>
+    <script
+      src="/dash0-website/_next/static/chunks/main-app-b3f5dad158c940ff.js"
+      async=""
+    ></script>
+    <script
+      src="/dash0-website/_next/static/chunks/717-3bb49067436b5b95.js"
+      async=""
+    ></script>
+    <script
+      src="/dash0-website/_next/static/chunks/347-524f9c7927f92442.js"
+      async=""
+    ></script>
+    <script
+      src="/dash0-website/_next/static/chunks/app/ai-sre-agent/page-9897ea9d97726cd7.js"
+      async=""
+    ></script>
+    <script
+      src="/dash0-website/_next/static/chunks/app/layout-7bc414df655e4945.js"
+      async=""
+    ></script>
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/threadweaver-action.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/artist-action.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/dash0-website/images/agents/lookout-action.png"
+    />
+    <title>Agent0 — AI SRE Agents for Observability · Dash0</title>
+    <meta
+      name="description"
+      content="Meet Agent0 — Dash0&#x27;s agentic AI platform. A team of specialized AI agents for incident triage, query building, instrumentation, and more."
+    />
+    <meta name="author" content="Dash0" />
+    <meta
+      name="keywords"
+      content="observability,opentelemetry,logs,metrics,traces,monitoring,apm,promql,dash0"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Agent0 — AI SRE Agents for Observability"
+    />
+    <meta
+      property="og:description"
+      content="A team of specialized AI agents — built directly into Dash0 — that transform how engineers work with observability."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Dash0 — OpenTelemetry-Native Observability"
+    />
+    <meta
+      name="twitter:description"
+      content="Logs, metrics, and traces — simple to set up, simple to scale."
+    />
+    <link
+      rel="icon"
+      href="/dash0-website/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <script
+      src="/dash0-website/_next/static/chunks/polyfills-42372ed130431b0a.js"
+      nomodule=""
+    ></script>
+  </head>
+  <body class="bg-[#0a0a0a] text-white antialiased">
+    <nav class="fixed top-0 left-0 right-0 z-50">
+      <div
+        class="announcement-bar py-3 px-6 text-center text-base text-white font-medium"
+      >
+        Dash0 Raises <span class="font-bold">$110M Series B</span> at $1B
+        Valuation<!-- -->
+        <a href="#" class="underline hover:no-underline ml-1">Read more →</a>
+      </div>
+      <div class="px-2 pt-2">
+        <div
+          class="border border-[#2a2a2a] rounded-xl transition-all duration-200 bg-[#0f0f0f]"
+        >
+          <div
+            class="w-full h-[64px] flex items-center justify-between gap-6 px-6 relative"
+          >
+            <a
+              class="flex items-center gap-2.5 shrink-0 z-10"
+              href="/dash0-website"
+              ><span class="text-white font-semibold text-lg tracking-tight"
+                >dash<span class="text-[#f97316]">0</span></span
+              ></a
+            >
+            <div
+              class="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2"
+            >
+              <div class="relative">
+                <button
+                  class="flex items-center gap-1.5 text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-md hover:bg-white/5"
+                >
+                  Product<!-- -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down transition-transform duration-200"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </div>
+              <a
+                class="text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-md hover:bg-white/5"
+                href="#"
+                >Pricing</a
+              ><a
+                class="text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-md hover:bg-white/5"
+                href="#"
+                >Docs</a
+              ><button
+                class="flex items-center gap-1.5 text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-md hover:bg-white/5"
+              >
+                Resources
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-down"
+                  aria-hidden="true"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg></button
+              ><button
+                class="flex items-center gap-1.5 text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-md hover:bg-white/5"
+              >
+                About
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-down"
+                  aria-hidden="true"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="hidden md:flex items-center gap-3">
+              <button
+                class="flex items-center gap-2 text-sm text-[#8b8b95] hover:text-white transition-colors bg-white/5 hover:bg-white/10 border border-[#2a2a2a] rounded-md px-3 py-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-search"
+                  aria-hidden="true"
+                >
+                  <path d="m21 21-4.34-4.34"></path>
+                  <circle cx="11" cy="11" r="8"></circle></svg
+                ><span class="hidden lg:inline">Search</span
+                ><kbd
+                  class="hidden lg:inline text-xs bg-[#2a2a2a] px-1.5 py-0.5 rounded font-mono"
+                  >Ctrl K</kbd
+                ></button
+              ><a
+                class="text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 rounded-lg hover:bg-white/5"
+                href="#"
+                >Sign In</a
+              ><a
+                class="text-base text-[#c4c4c4] hover:text-white transition-colors px-4 py-2 border border-[#2a2a2a] rounded-lg hover:border-[#3a3a3a]"
+                href="#"
+                >Book a Demo</a
+              ><a
+                class="btn-gradient text-base font-medium text-white px-5 py-2 rounded-lg transition-colors"
+                href="#"
+                >Start Free Trial</a
+              >
+            </div>
+            <button class="md:hidden text-[#a1a1aa] hover:text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-menu"
+                aria-hidden="true"
+              >
+                <path d="M4 5h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 19h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="pt-[110px]">
+      <section class="relative py-24 border-b border-[#262626] overflow-hidden">
+        <div
+          class="absolute bottom-0 left-0 right-0 h-1/2 pointer-events-none overflow-hidden"
+        >
+          <canvas class="absolute inset-0 w-full h-full"></canvas>
+          <div
+            class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_80%,rgba(249,115,22,0.06)_0%,transparent_70%)]"
+          ></div>
+          <div
+            class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#0a0a0a] to-transparent"
+          ></div>
+          <div
+            class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0a0a0a] to-transparent"
+          ></div>
+          <div
+            class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent"
+          ></div>
+          <div
+            class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent"
+          ></div>
+        </div>
+        <div class="relative z-10 max-w-[1440px] mx-auto px-12">
+          <div class="text-center max-w-[760px] mx-auto mb-12">
+            <div
+              class="inline-flex items-center gap-2 bg-[#f97316]/10 border border-[#f97316]/20 rounded-full px-4 py-1.5 mb-6"
+            >
+              <span
+                class="w-1.5 h-1.5 rounded-full bg-[#f97316] animate-pulse"
+              ></span
+              ><span class="text-sm text-[#f97316] font-medium"
+                >Agentic AI for Observability</span
+              >
+            </div>
+            <h1
+              class="text-4xl md:text-6xl font-bold text-white leading-[1.1] mb-6"
+            >
+              Meet <span class="text-[#f97316]">Agent0</span> — Your AI
+              Specialists for Observability
+            </h1>
+            <p
+              class="text-lg text-[#a1a1aa] leading-relaxed mb-8 max-w-[600px] mx-auto"
+            >
+              Agent0 is Dash0&#x27;s agentic AI platform — a team of specialized
+              AI agents that transform how engineers work with observability.
+              From incident triage to query building and onboarding, each agent
+              acts like an expert teammate, built directly into Dash0.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
+            >
+              <a
+                class="btn-gradient flex items-center gap-2 text-white font-semibold px-7 py-3 rounded-xl text-base shadow-lg shadow-orange-500/20"
+                href="#"
+                >Get Started Free<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg></a
+              ><a
+                class="flex items-center gap-2 text-[#a1a1aa] hover:text-white bg-[#0a0a0a] border border-[#2a2a2a] hover:border-[#3a3a3a] px-7 py-3 rounded-xl text-base transition-all"
+                href="#"
+                >Book a Demo</a
+              >
+            </div>
+            <p class="text-sm text-[#a1a1aa]">
+              Agent0 is available today in<!-- -->
+              <span class="text-[#f97316] font-medium">Beta</span> for all Dash0
+              users — no extra cost.
+            </p>
+          </div>
+          <div
+            class="relative rounded-2xl overflow-hidden border border-[#2a2a2a] shadow-2xl shadow-black/60"
+          >
+            <img
+              src="/dash0-website/images/agent-hero.avif"
+              alt="Agent0 — Dash0&#x27;s agentic AI observability platform"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="py-24 border-b border-[#262626] bg-[#0e0e0e]">
+        <div class="max-w-[1440px] mx-auto px-12">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+              Why <span class="text-[#f97316]">Agent0</span>
+            </h2>
+            <p
+              class="text-xl text-[#a1a1aa] max-w-[560px] mx-auto leading-relaxed"
+            >
+              Agent0 brings clarity and speed to engineers at all levels of
+              expertise — turning complex observability tasks into guided,
+              explainable workflows.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="bg-[#212121] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300 flex flex-col items-center text-center"
+            >
+              <div class="mb-8">
+                <svg
+                  viewBox="0 0 50 50"
+                  class="w-16 h-16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="25" cy="18" r="8" fill="#f97316"></circle>
+                  <path
+                    d="M10 42c0-8.284 6.716-15 15-15s15 6.716 15 15"
+                    stroke="#f97316"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  ></path>
+                  <circle
+                    cx="38"
+                    cy="20"
+                    r="5"
+                    fill="#f97316"
+                    opacity="0.6"
+                  ></circle>
+                  <path
+                    d="M43 34c0-5.523-4.477-10-10-10"
+                    stroke="#f97316"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    opacity="0.6"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-4">
+                Built to Empower Engineers
+              </h3>
+              <p class="text-base text-[#a1a1aa] leading-relaxed">
+                Agent0 enhances human expertise. It doesn&#x27;t guess — it
+                guides. Each agent works with your telemetry, in context, and
+                shows exactly which data and tools it used.
+              </p>
+            </div>
+            <div
+              class="bg-[#212121] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300 flex flex-col items-center text-center"
+            >
+              <div class="mb-8">
+                <svg
+                  viewBox="0 0 50 50"
+                  class="w-16 h-16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="8"
+                    y="8"
+                    width="34"
+                    height="34"
+                    rx="4"
+                    fill="#f97316"
+                    opacity="0.15"
+                  ></rect>
+                  <rect
+                    x="8"
+                    y="8"
+                    width="34"
+                    height="34"
+                    rx="4"
+                    stroke="#f97316"
+                    stroke-width="2"
+                  ></rect>
+                  <line
+                    x1="16"
+                    y1="18"
+                    x2="34"
+                    y2="18"
+                    stroke="#f97316"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  ></line>
+                  <line
+                    x1="16"
+                    y1="25"
+                    x2="34"
+                    y2="25"
+                    stroke="#f97316"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  ></line>
+                  <line
+                    x1="16"
+                    y1="32"
+                    x2="26"
+                    y2="32"
+                    stroke="#f97316"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  ></line>
+                  <circle cx="38" cy="38" r="8" fill="#f97316"></circle>
+                  <path
+                    d="M34 38l3 3 5-5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-4">
+                Explainable. Transparent. Secure.
+              </h3>
+              <p class="text-base text-[#a1a1aa] leading-relaxed">
+                Agent0 is deeply integrated inside Dash0. You always see what
+                the agent did, how it reasoned, and which telemetry powered the
+                insight. No black boxes.
+              </p>
+            </div>
+            <div
+              class="bg-[#212121] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300 flex flex-col items-center text-center"
+            >
+              <div class="mb-8">
+                <svg
+                  viewBox="0 0 50 50"
+                  class="w-16 h-16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 35l8-12 6 8 6-16 6 10 4-6"
+                    stroke="#f97316"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <circle cx="40" cy="14" r="6" fill="#f97316"></circle>
+                  <path
+                    d="M37 14l2 2 4-4"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-4">
+                Force Multiplier for Your Team
+              </h3>
+              <p class="text-base text-[#a1a1aa] leading-relaxed">
+                By removing troubleshooting bottlenecks and query barriers,
+                Agent0 empowers every developer to act like a senior engineer —
+                freeing experts to focus on deeper challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-24 border-b border-[#262626]">
+        <div class="max-w-[1440px] mx-auto px-12">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+              Meet the <span class="text-[#f97316]">Agent0 Guild</span>
+            </h2>
+            <p
+              class="text-xl text-[#a1a1aa] max-w-[560px] mx-auto leading-relaxed"
+            >
+              Your built-in observability experts — each focused on a single
+              mission.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div
+              class="bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center"
+              style="border-top-color: #3b82f640"
+            >
+              <div class="mb-6 w-20 h-20 flex items-center justify-center">
+                <img
+                  src="/dash0-website/images/agents/seeker.svg"
+                  alt="The Seeker"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <span
+                class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4"
+                style="
+                  color: #3b82f6;
+                  background-color: #3b82f615;
+                  border: 1px solid #3b82f630;
+                "
+                >Troubleshooting &amp; Incident Triage</span
+              >
+              <h3 class="text-2xl font-bold text-white mb-3">The Seeker</h3>
+              <p class="text-base italic text-[#8b8b95] leading-relaxed mb-4">
+                &quot;<!-- -->No anomaly can hide. The Seeker traces every
+                ripple in your system, hunts down root causes, and surfaces what
+                others can&#x27;t see.<!-- -->&quot;
+              </p>
+              <p class="text-base text-[#a1a1aa] leading-relaxed">
+                The Seeker acts as your on-call wingman — surfacing what others
+                can&#x27;t see and guiding you through incident triage with
+                speed and precision.
+              </p>
+            </div>
+            <div
+              class="bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center"
+              style="border-top-color: #f9731640"
+            >
+              <div class="mb-6 w-20 h-20 flex items-center justify-center">
+                <img
+                  src="/dash0-website/images/agents/oracle.svg"
+                  alt="The Oracle"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <span
+                class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4"
+                style="
+                  color: #f97316;
+                  background-color: #f9731615;
+                  border: 1px solid #f9731630;
+                "
+                >PromQL Query Assistant</span
+              >
+              <h3 class="text-2xl font-bold text-white mb-3">The Oracle</h3>
+              <p class="text-base italic text-[#8b8b95] leading-relaxed mb-4">
+                &quot;<!-- -->The Oracle speaks the language of PromQL fluently.
+                Ask, and it reveals the logic behind the query — with clarity
+                and insight.<!-- -->&quot;
+              </p>
+              <p class="text-base text-[#a1a1aa] leading-relaxed">
+                Ask in plain language. Get valid, optimized PromQL queries
+                instantly. The Oracle explains query logic and helps you move
+                from guesswork to precision.
+              </p>
+            </div>
+            <div
+              class="bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center"
+              style="border-top-color: #22c55e40"
+            >
+              <div class="mb-6 w-20 h-20 flex items-center justify-center">
+                <img
+                  src="/dash0-website/images/agents/pathfinder.svg"
+                  alt="The Pathfinder"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <span
+                class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4"
+                style="
+                  color: #22c55e;
+                  background-color: #22c55e15;
+                  border: 1px solid #22c55e30;
+                "
+                >Onboarding &amp; Instrumentation Guide</span
+              >
+              <h3 class="text-2xl font-bold text-white mb-3">The Pathfinder</h3>
+              <p class="text-base italic text-[#8b8b95] leading-relaxed mb-4">
+                &quot;<!-- -->A trusted guide for every new journey. The
+                Pathfinder leads your apps into the world of OpenTelemetry and
+                Dash0 — step by step.<!-- -->&quot;
+              </p>
+              <p class="text-base text-[#a1a1aa] leading-relaxed">
+                Instrument apps and connect telemetry in minutes — not weeks.
+                The Pathfinder walks you step-by-step through OpenTelemetry
+                setup and Dash0 integration.
+              </p>
+            </div>
+            <div
+              class="bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center"
+              style="border-top-color: #14b8a640"
+            >
+              <div class="mb-6 w-20 h-20 flex items-center justify-center">
+                <img
+                  src="/dash0-website/images/agents/threadweaver.svg"
+                  alt="The Threadweaver"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <span
+                class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4"
+                style="
+                  color: #14b8a6;
+                  background-color: #14b8a615;
+                  border: 1px solid #14b8a630;
+                "
+                >Trace Analyst &amp; Narrative Builder</span
+              >
+              <h3 class="text-2xl font-bold text-white mb-3">
+                The Threadweaver
+              </h3>
+              <p class="text-base italic text-[#8b8b95] leading-relaxed mb-4">
+                &quot;<!-- -->The Threadweaver connects every span like strands
+                of fate — revealing how your system&#x27;s stories truly unfold.<!-- -->&quot;
+              </p>
+              <p class="text-base text-[#a1a1aa] leading-relaxed">
+                Weave spans into understanding. The Threadweaver transforms
+                complex traces into clear cause-and-effect chains, uncovering
+                bottlenecks and hidden dependencies.
+              </p>
+            </div>
+            <div
+              class="bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center"
+              style="border-top-color: #94a3b840"
+            >
+              <div class="mb-6 w-20 h-20 flex items-center justify-center">
+                <img
+                  src="/dash0-website/images/agents/artist.svg"
+                  alt="The Artist"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <span
+                class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4"
+                style="
+                  color: #94a3b8;
+                  background-color: #94a3b815;
+                  border: 1px solid #94a3b830;
+                "
+                >Dashboard &amp; Alert Builder</span
+              >
+              <h3 class="text-2xl font-bold text-white mb-3">The Artist</h3>
+              <p class="text-base italic text-[#8b8b95] leading-relaxed mb-4">
+                &quot;<!-- -->The Artist shapes data into vision. With steady
+                hands, it designs dashboards and creates alert rules that bring
+                order to the chaos.<!-- -->&quot;
+              </p>
+              <p class="text-base text-[#a1a1aa] leading-relaxed">
+                Turn signals into stories. The Artist designs dashboards and
+                alert rules that bring clarity to the most complex systems —
+                automatically.
+              </p>
+            </div>
+            <div
+              class="bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center"
+              style="border-top-color: #125f1240"
+            >
+              <div class="mb-6 w-20 h-20 flex items-center justify-center">
+                <img
+                  src="/dash0-website/images/agents/lookout.svg"
+                  alt="The Lookout"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <span
+                class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4"
+                style="
+                  color: #709f70;
+                  background-color: #125f1215;
+                  border: 1px solid #125f1230;
+                "
+                >Web Performance &amp; User Experience</span
+              >
+              <h3 class="text-2xl font-bold text-white mb-3">The Lookout</h3>
+              <p class="text-base italic text-[#8b8b95] leading-relaxed mb-4">
+                &quot;<!-- -->The Lookout watches over every user&#x27;s journey
+                — tracking Web Vitals, JavaScript errors, and session flows to
+                reveal what real users experience.<!-- -->&quot;
+              </p>
+              <p class="text-base text-[#a1a1aa] leading-relaxed">
+                Transform web analytics into actionable insights. The Lookout
+                analyzes frontend performance, correlates user behavior with
+                backend issues, and helps you optimize experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="relative py-24 border-b border-[#1f1f1f] bg-[#0d0d0d] overflow-hidden"
+      >
+        <div class="absolute inset-0 pointer-events-none">
+          <svg
+            class="absolute inset-0 w-full h-full"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice"
+          >
+            <defs>
+              <pattern
+                id="circuit-pattern"
+                x="0"
+                y="0"
+                width="1000"
+                height="1000"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M 160 240 L 480 240 Q 500 240 500 260 L 500 400 Q 500 420 520 420 L 820 420"
+                  stroke="#2a2a2a"
+                  stroke-width="3"
+                  fill="none"
+                ></path>
+                <path
+                  d="M 390 820 L 390 620 Q 390 600 410 600 L 800 600 Q 820 600 820 580 L 820 460"
+                  stroke="#2a2a2a"
+                  stroke-width="3"
+                  fill="none"
+                ></path>
+                <path
+                  d="M 390 820 L 920 820 Q 940 820 940 840 L 940 890"
+                  stroke="#2a2a2a"
+                  stroke-width="3"
+                  fill="none"
+                ></path>
+                <rect
+                  x="120"
+                  y="200"
+                  width="80"
+                  height="80"
+                  rx="5"
+                  fill="#3a3a3a"
+                ></rect>
+                <rect
+                  x="780"
+                  y="380"
+                  width="80"
+                  height="80"
+                  rx="5"
+                  fill="#3a3a3a"
+                ></rect>
+                <rect
+                  x="350"
+                  y="780"
+                  width="80"
+                  height="80"
+                  rx="5"
+                  fill="#3a3a3a"
+                ></rect>
+                <rect
+                  x="900"
+                  y="850"
+                  width="80"
+                  height="80"
+                  rx="5"
+                  fill="#3a3a3a"
+                ></rect>
+              </pattern>
+            </defs>
+            <rect
+              width="100%"
+              height="100%"
+              fill="url(#circuit-pattern)"
+            ></rect>
+          </svg>
+        </div>
+        <div class="relative z-10 max-w-[1440px] mx-auto px-12">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+              Agent0 <span class="text-[#f97316]">in Action</span>
+            </h2>
+            <p
+              class="text-xl text-[#a1a1aa] max-w-[560px] mx-auto leading-relaxed"
+            >
+              Agent0 turns observability from looking for a needle in a haystack
+              into a guided experience. Each agent brings specialized expertise
+              — helping you troubleshoot, query, instrument, and visualize
+              faster than ever.
+            </p>
+          </div>
+          <div class="space-y-8">
+            <div style="opacity: 0; transform: translateY(15px)">
+              <div
+                class="group flex flex-col lg:flex-row items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300"
+              >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-4 mb-6">
+                    <div
+                      class="w-14 h-14 rounded-xl flex items-center justify-center shrink-0"
+                      style="
+                        background-color: #3b82f620;
+                        border: 1px solid #3b82f640;
+                      "
+                    >
+                      <img
+                        src="/dash0-website/images/agents/seeker.svg"
+                        alt="The Seeker"
+                        class="w-10 h-10 object-contain"
+                      />
+                    </div>
+                    <div>
+                      <p
+                        class="text-sm font-semibold tracking-widest uppercase"
+                        style="color: #3b82f6"
+                      >
+                        The Seeker
+                      </p>
+                      <h3 class="text-2xl font-bold text-white">
+                        Root Cause in Seconds
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="text-lg text-[#a1a1aa] leading-relaxed">
+                    An engineer receives an alert and asks Agent0 what&#x27;s
+                    going on. The Seeker analyzes recent traces, logs, and
+                    metrics to explain the issue — surfacing the affected
+                    service, related changes, and likely root cause in moments.
+                  </p>
+                </div>
+                <div
+                  class="flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]"
+                  style="--agent-color: #3b82f6; --agent-glow: #3b82f640"
+                >
+                  <div
+                    class="relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center"
+                  >
+                    <img
+                      src="/dash0-website/images/agents/seeker-action.png"
+                      alt="The Seeker — Root Cause in Seconds"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 0; transform: translateY(15px)">
+              <div
+                class="group flex flex-col lg:flex-row-reverse items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300"
+              >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-4 mb-6">
+                    <div
+                      class="w-14 h-14 rounded-xl flex items-center justify-center shrink-0"
+                      style="
+                        background-color: #f9731620;
+                        border: 1px solid #f9731640;
+                      "
+                    >
+                      <img
+                        src="/dash0-website/images/agents/oracle.svg"
+                        alt="The Oracle"
+                        class="w-10 h-10 object-contain"
+                      />
+                    </div>
+                    <div>
+                      <p
+                        class="text-sm font-semibold tracking-widest uppercase"
+                        style="color: #f97316"
+                      >
+                        The Oracle
+                      </p>
+                      <h3 class="text-2xl font-bold text-white">
+                        From Question to Query
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="text-lg text-[#a1a1aa] leading-relaxed">
+                    An engineer types: &quot;Show me 95th percentile latency for
+                    checkout over the last hour.&quot; The Oracle instantly
+                    generates the correct PromQL, explains what it does, and
+                    shows the resulting graph — no syntax errors, no guesswork.
+                  </p>
+                </div>
+                <div
+                  class="flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]"
+                  style="--agent-color: #f97316; --agent-glow: #f9731640"
+                >
+                  <div
+                    class="relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center"
+                  >
+                    <img
+                      src="/dash0-website/images/agents/oracle-action.png"
+                      alt="The Oracle — From Question to Query"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 0; transform: translateY(15px)">
+              <div
+                class="group flex flex-col lg:flex-row items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300"
+              >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-4 mb-6">
+                    <div
+                      class="w-14 h-14 rounded-xl flex items-center justify-center shrink-0"
+                      style="
+                        background-color: #22c55e20;
+                        border: 1px solid #22c55e40;
+                      "
+                    >
+                      <img
+                        src="/dash0-website/images/agents/pathfinder.svg"
+                        alt="The Pathfinder"
+                        class="w-10 h-10 object-contain"
+                      />
+                    </div>
+                    <div>
+                      <p
+                        class="text-sm font-semibold tracking-widest uppercase"
+                        style="color: #22c55e"
+                      >
+                        The Pathfinder
+                      </p>
+                      <h3 class="text-2xl font-bold text-white">
+                        Onboard in Minutes
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="text-lg text-[#a1a1aa] leading-relaxed">
+                    A developer asks Agent0 how to instrument a new Java
+                    service. The Pathfinder uses Dash0&#x27;s integrations and
+                    documentation to provide clear, step-by-step guidance —
+                    helping the team get telemetry flowing in minutes, not
+                    hours.
+                  </p>
+                </div>
+                <div
+                  class="flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]"
+                  style="--agent-color: #22c55e; --agent-glow: #22c55e40"
+                >
+                  <div
+                    class="relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center"
+                  >
+                    <img
+                      src="/dash0-website/images/agents/pathfinder-action.png"
+                      alt="The Pathfinder — Onboard in Minutes"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 0; transform: translateY(15px)">
+              <div
+                class="group flex flex-col lg:flex-row-reverse items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300"
+              >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-4 mb-6">
+                    <div
+                      class="w-14 h-14 rounded-xl flex items-center justify-center shrink-0"
+                      style="
+                        background-color: #14b8a620;
+                        border: 1px solid #14b8a640;
+                      "
+                    >
+                      <img
+                        src="/dash0-website/images/agents/threadweaver.svg"
+                        alt="The Threadweaver"
+                        class="w-10 h-10 object-contain"
+                      />
+                    </div>
+                    <div>
+                      <p
+                        class="text-sm font-semibold tracking-widest uppercase"
+                        style="color: #14b8a6"
+                      >
+                        The Threadweaver
+                      </p>
+                      <h3 class="text-2xl font-bold text-white">
+                        Stories Behind the Spans
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="text-lg text-[#a1a1aa] leading-relaxed">
+                    A developer wonders why checkout latency keeps spiking
+                    intermittently. They ask Agent0 to analyze recent traces.
+                    The Threadweaver stitches together the full journey across
+                    services, highlighting where the slowdown begins.
+                  </p>
+                </div>
+                <div
+                  class="flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]"
+                  style="--agent-color: #14b8a6; --agent-glow: #14b8a640"
+                >
+                  <div
+                    class="relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center"
+                  >
+                    <img
+                      src="/dash0-website/images/agents/threadweaver-action.png"
+                      alt="The Threadweaver — Stories Behind the Spans"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 0; transform: translateY(15px)">
+              <div
+                class="group flex flex-col lg:flex-row items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300"
+              >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-4 mb-6">
+                    <div
+                      class="w-14 h-14 rounded-xl flex items-center justify-center shrink-0"
+                      style="
+                        background-color: #94a3b820;
+                        border: 1px solid #94a3b840;
+                      "
+                    >
+                      <img
+                        src="/dash0-website/images/agents/artist.svg"
+                        alt="The Artist"
+                        class="w-10 h-10 object-contain"
+                      />
+                    </div>
+                    <div>
+                      <p
+                        class="text-sm font-semibold tracking-widest uppercase"
+                        style="color: #94a3b8"
+                      >
+                        The Artist
+                      </p>
+                      <h3 class="text-2xl font-bold text-white">
+                        Dashboards That Build Themselves
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="text-lg text-[#a1a1aa] leading-relaxed">
+                    A developer asks Agent0 to &quot;Create a dashboard and
+                    alerts for my ProductCatalog service.&quot; The Artist
+                    analyzes existing telemetry, then generates a clean,
+                    best-practice dashboard with latency, error rate, and
+                    throughput.
+                  </p>
+                </div>
+                <div
+                  class="flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]"
+                  style="--agent-color: #94a3b8; --agent-glow: #94a3b840"
+                >
+                  <div
+                    class="relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center"
+                  >
+                    <img
+                      src="/dash0-website/images/agents/artist-action.png"
+                      alt="The Artist — Dashboards That Build Themselves"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 0; transform: translateY(15px)">
+              <div
+                class="group flex flex-col lg:flex-row-reverse items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300"
+              >
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-4 mb-6">
+                    <div
+                      class="w-14 h-14 rounded-xl flex items-center justify-center shrink-0"
+                      style="
+                        background-color: #125f1220;
+                        border: 1px solid #125f1240;
+                      "
+                    >
+                      <img
+                        src="/dash0-website/images/agents/lookout.svg"
+                        alt="The Lookout"
+                        class="w-10 h-10 object-contain"
+                      />
+                    </div>
+                    <div>
+                      <p
+                        class="text-sm font-semibold tracking-widest uppercase"
+                        style="color: #598f59"
+                      >
+                        The Lookout
+                      </p>
+                      <h3 class="text-2xl font-bold text-white">
+                        Find What&#x27;s Breaking User Experience
+                      </h3>
+                    </div>
+                  </div>
+                  <p class="text-lg text-[#a1a1aa] leading-relaxed">
+                    A team notices rising abandonment rates. They ask Agent0
+                    which sessions had performance issues during checkout. The
+                    Lookout surfaces sessions with poor Web Vitals, linking
+                    frontend slowness to a payment API bottleneck.
+                  </p>
+                </div>
+                <div
+                  class="flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]"
+                  style="--agent-color: #125f12; --agent-glow: #125f1240"
+                >
+                  <div
+                    class="relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center"
+                  >
+                    <img
+                      src="/dash0-website/images/agents/lookout-action.png"
+                      alt="The Lookout — Find What&#x27;s Breaking User Experience"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative py-32 overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+          <canvas class="absolute inset-0 w-full h-full"></canvas>
+          <div
+            class="absolute inset-0 bg-[radial-gradient(ellipse_60%_70%_at_50%_50%,transparent_20%,#0a0a0a_80%)]"
+          ></div>
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#f97316]/8 rounded-full blur-[120px]"
+          ></div>
+        </div>
+        <div class="relative z-10 max-w-[1440px] mx-auto px-12 text-center">
+          <div
+            class="inline-flex items-center gap-2 bg-[#f97316]/10 border border-[#f97316]/20 rounded-full px-4 py-1.5 mb-8"
+          >
+            <span
+              class="w-1.5 h-1.5 rounded-full bg-[#f97316] animate-pulse"
+            ></span
+            ><span class="text-sm text-[#f97316] font-medium"
+              >Available now in Beta</span
+            >
+          </div>
+          <h2
+            class="text-4xl md:text-6xl font-bold text-white leading-[1.1] mb-6"
+          >
+            Agentic Observability<!-- -->
+            <span class="text-[#f97316]">Starts Here</span>
+          </h2>
+          <p
+            class="text-xl text-[#a1a1aa] leading-relaxed mb-10 max-w-[640px] mx-auto"
+          >
+            Join the next chapter of observability — where data works with you,
+            not against you. Agent0 is available today in Beta for all Dash0
+            users, at no extra cost.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
+          >
+            <a
+              class="btn-gradient flex items-center gap-2 text-white font-semibold px-8 py-3.5 rounded-xl text-base shadow-lg shadow-orange-500/20"
+              href="#"
+              >Try Agent0 Free<svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path></svg></a
+            ><a
+              class="flex items-center gap-2 text-[#a1a1aa] hover:text-white bg-[#0a0a0a] border border-[#2a2a2a] hover:border-[#3a3a3a] px-8 py-3.5 rounded-xl text-base transition-all"
+              href="#"
+              >Book a Demo</a
+            >
+          </div>
+          <p class="font-medium text-[#8b8b95]">
+            No credit card required · Built directly into Dash0 · Cancel anytime
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-[#1f1f1f] bg-[#0a0a0a] pt-20 pb-10 px-2">
+      <div class="w-full px-6">
+        <div
+          class="grid grid-cols-2 md:grid-cols-5 gap-12 pb-14 border-b border-[#262626]"
+        >
+          <div class="col-span-2 md:col-span-1">
+            <span class="text-white font-semibold text-xl tracking-tight"
+              >dash<span class="text-[#f97316]">0</span></span
+            >
+            <p class="mt-4 text-base text-[#8b8b95] leading-relaxed">
+              OpenTelemetry-native observability. Simple to switch. Built to
+              last.
+            </p>
+            <div class="flex items-center gap-5 mt-6">
+              <a
+                href="#"
+                class="text-base text-[#8b8b95] hover:text-white transition-colors"
+                >GitHub</a
+              ><a
+                href="#"
+                class="text-base text-[#8b8b95] hover:text-white transition-colors"
+                >LinkedIn</a
+              ><a
+                href="#"
+                class="text-base text-[#8b8b95] hover:text-white transition-colors"
+                >X</a
+              ><a
+                href="#"
+                class="text-base text-[#8b8b95] hover:text-white transition-colors"
+                >YouTube</a
+              >
+            </div>
+          </div>
+          <div>
+            <p
+              class="text-sm font-semibold tracking-widest text-[#8b8b95] uppercase mb-5"
+            >
+              Resources
+            </p>
+            <ul class="space-y-3.5">
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Guides</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Knowledge</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Comparisons</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Changelog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="text-sm font-semibold tracking-widest text-[#8b8b95] uppercase mb-5"
+            >
+              Company
+            </p>
+            <ul class="space-y-3.5">
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Trust Center</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Security</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="text-sm font-semibold tracking-widest text-[#8b8b95] uppercase mb-5"
+            >
+              Compare
+            </p>
+            <ul class="space-y-3.5">
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >vs Datadog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >vs Grafana</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >vs Dynatrace</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >vs New Relic</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >vs Elastic</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >vs Honeycomb</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >vs Splunk</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="text-sm font-semibold tracking-widest text-[#8b8b95] uppercase mb-5"
+            >
+              Contact
+            </p>
+            <ul class="space-y-3.5">
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Contact us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-base text-white hover:text-[#a1a1aa] transition-colors"
+                  href="#"
+                  >Newsletter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-4 pt-10"
+        >
+          <p class="text-base text-[#8b8b95]">©2026 Dash0 Inc.</p>
+          <div class="flex items-center gap-8">
+            <a
+              class="text-base text-[#8b8b95] hover:text-white transition-colors"
+              href="#"
+              >Terms and Conditions</a
+            ><a
+              class="text-base text-[#8b8b95] hover:text-white transition-colors"
+              href="#"
+              >Privacy Policy</a
+            ><a
+              class="text-base text-[#8b8b95] hover:text-white transition-colors"
+              href="#"
+              >Data Processing Agreement</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="/dash0-website/_next/static/chunks/webpack-20bfbccbe1ea0056.js"
+      async=""
+    ></script>
+    <script>
+      (self.__next_f = self.__next_f || []).push([0]);
+      self.__next_f.push([2, null]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '1:HL["/dash0-website/_next/static/css/cd0f4a6938998407.css","style"]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '2:I[2846,[],""]\n4:I[1821,["717","static/chunks/717-3bb49067436b5b95.js","347","static/chunks/347-524f9c7927f92442.js","483","static/chunks/app/ai-sre-agent/page-9897ea9d97726cd7.js"],"default"]\n5:I[2972,["717","static/chunks/717-3bb49067436b5b95.js","347","static/chunks/347-524f9c7927f92442.js","483","static/chunks/app/ai-sre-agent/page-9897ea9d97726cd7.js"],""]\n6:I[2228,["717","static/chunks/717-3bb49067436b5b95.js","347","static/chunks/347-524f9c7927f92442.js","483","static/chunks/app/ai-sre-agent/page-9897ea9d97726cd7.js"],"default"]\n7:I[9162,["717","static/chunks/717-3bb49067436b5b95.js","347","static/chunks/347-524f9c7927f92442.js","483","static/chunks/app/ai-sre-agent/page-9897ea9d97726cd7.js"],"default"]\nd:I[4707,[],""]\ne:I[6423,[],""]\nf:I[9828,["717","static/chunks/717-3bb49067436b5b95.js","185","static/chunks/app/layout-7bc414df655e4945.js"],"default"]\n11:I[1060,[],""]\na:{"d":"M5 12h14","key":"1ays0h"}\n9:["path","$a"]\nc:{"d":"m12 5 7 7-7 7","key":"xquz4c"}\nb:["path","$c"]\n8:["$9","$b"]\n12:[]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '0:["$","$L2",null,{"buildId":"zUzzmp-mlbQjbM9NWD5fz","assetPrefix":"/dash0-website","urlParts":["","ai-sre-agent"],"initialTree":["",{"children":["ai-sre-agent",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"initialSeedData":["",{"children":["ai-sre-agent",{"children":["__PAGE__",{},[["$L3",["$","main",null,{"className":"pt-[110px]","children":[["$","section",null,{"className":"relative py-24 border-b border-[#262626] overflow-hidden","children":[["$","div",null,{"className":"absolute bottom-0 left-0 right-0 h-1/2 pointer-events-none overflow-hidden","children":[["$","$L4",null,{}],["$","div",null,{"className":"absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_80%,rgba(249,115,22,0.06)_0%,transparent_70%)]"}],["$","div",null,{"className":"absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#0a0a0a] to-transparent"}],["$","div",null,{"className":"absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0a0a0a] to-transparent"}],["$","div",null,{"className":"absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent"}],["$","div",null,{"className":"absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent"}]]}],["$","div",null,{"className":"relative z-10 max-w-[1440px] mx-auto px-12","children":[["$","div",null,{"className":"text-center max-w-[760px] mx-auto mb-12","children":[["$","div",null,{"className":"inline-flex items-center gap-2 bg-[#f97316]/10 border border-[#f97316]/20 rounded-full px-4 py-1.5 mb-6","children":[["$","span",null,{"className":"w-1.5 h-1.5 rounded-full bg-[#f97316] animate-pulse"}],["$","span",null,{"className":"text-sm text-[#f97316] font-medium","children":"Agentic AI for Observability"}]]}],["$","h1",null,{"className":"text-4xl md:text-6xl font-bold text-white leading-[1.1] mb-6","children":["Meet ",["$","span",null,{"className":"text-[#f97316]","children":"Agent0"}]," — Your AI Specialists for Observability"]}],["$","p",null,{"className":"text-lg text-[#a1a1aa] leading-relaxed mb-8 max-w-[600px] mx-auto","children":"Agent0 is Dash0\'s agentic AI platform — a team of specialized AI agents that transform how engineers work with observability. From incident triage to query building and onboarding, each agent acts like an expert teammate, built directly into Dash0."}],["$","div",null,{"className":"flex flex-col sm:flex-row items-center justify-center gap-4 mb-6","children":[["$","$L5",null,{"href":"#","className":"btn-gradient flex items-center gap-2 text-white font-semibold px-7 py-3 rounded-xl text-base shadow-lg shadow-orange-500/20","children":["Get Started Free",["$","$L6",null,{"iconNode":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]],"className":"lucide-arrow-right","size":16}]]}],["$","$L5",null,{"href":"#","className":"flex items-center gap-2 text-[#a1a1aa] hover:text-white bg-[#0a0a0a] border border-[#2a2a2a] hover:border-[#3a3a3a] px-7 py-3 rounded-xl text-base transition-all","children":"Book a Demo"}]]}],["$","p",null,{"className":"text-sm text-[#a1a1aa]","children":["Agent0 is available today in"," ",["$","span",null,{"className":"text-[#f97316] font-medium","children":"Beta"}]," for all Dash0 users — no extra cost."]}]]}],["$","div",null,{"className":"relative rounded-2xl overflow-hidden border border-[#2a2a2a] shadow-2xl shadow-black/60","children":["$","img",null,{"src":"/dash0-website/images/agent-hero.avif","alt":"Agent0 — Dash0\'s agentic AI observability platform","className":"w-full h-auto object-cover"}]}]]}]]}],["$","section",null,{"className":"py-24 border-b border-[#262626] bg-[#0e0e0e]","children":["$","div",null,{"className":"max-w-[1440px] mx-auto px-12","children":[["$","div",null,{"className":"text-center mb-16","children":[["$","h2",null,{"className":"text-4xl md:text-5xl font-bold text-white mb-6","children":["Why ",["$","span",null,{"className":"text-[#f97316]","children":"Agent0"}]]}],["$","p",null,{"className":"text-xl text-[#a1a1aa] max-w-[560px] mx-auto leading-relaxed","children":"Agent0 brings clarity and speed to engineers at all levels of expertise — turning complex observability tasks into guided, explainable workflows."}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-3 gap-6","children":[["$","div","Built to Empower Engineers",{"className":"bg-[#212121] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300 flex flex-col items-center text-center","children":[["$","div",null,{"className":"mb-8","children":["$","svg",null,{"viewBox":"0 0 50 50","className":"w-16 h-16","fill":"none","xmlns":"http://www.w3.org/2000/svg","children":[["$","circle",null,{"cx":"25","cy":"18","r":"8","fill":"#f97316"}],["$","path",null,{"d":"M10 42c0-8.284 6.716-15 15-15s15 6.716 15 15","stroke":"#f97316","strokeWidth":"3","strokeLinecap":"round"}],["$","circle",null,{"cx":"38","cy":"20","r":"5","fill":"#f97316","opacity":"0.6"}],["$","path",null,{"d":"M43 34c0-5.523-4.477-10-10-10","stroke":"#f97316","strokeWidth":"2.5","strokeLinecap":"round","opacity":"0.6"}]]}]}],["$","h3",null,{"className":"text-xl font-bold text-white mb-4","children":"Built to Empower Engineers"}],["$","p",null,{"className":"text-base text-[#a1a1aa] leading-relaxed","children":"Agent0 enhances human expertise. It doesn\'t guess — it guides. Each agent works with your telemetry, in context, and shows exactly which data and tools it used."}]]}],["$","div","Explainable. Transparent. Secure.",{"className":"bg-[#212121] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300 flex flex-col items-center text-center","children":[["$","div",null,{"className":"mb-8","children":["$","svg",null,{"viewBox":"0 0 50 50","className":"w-16 h-16","fill":"none","xmlns":"http://www.w3.org/2000/svg","children":[["$","rect",null,{"x":"8","y":"8","width":"34","height":"34","rx":"4","fill":"#f97316","opacity":"0.15"}],["$","rect",null,{"x":"8","y":"8","width":"34","height":"34","rx":"4","stroke":"#f97316","strokeWidth":"2"}],["$","line",null,{"x1":"16","y1":"18","x2":"34","y2":"18","stroke":"#f97316","strokeWidth":"2.5","strokeLinecap":"round"}],["$","line",null,{"x1":"16","y1":"25","x2":"34","y2":"25","stroke":"#f97316","strokeWidth":"2.5","strokeLinecap":"round"}],["$","line",null,{"x1":"16","y1":"32","x2":"26","y2":"32","stroke":"#f97316","strokeWidth":"2.5","strokeLinecap":"round"}],["$","circle",null,{"cx":"38","cy":"38","r":"8","fill":"#f97316"}],["$","path",null,{"d":"M34 38l3 3 5-5","stroke":"white","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round"}]]}]}],["$","h3",null,{"className":"text-xl font-bold text-white mb-4","children":"Explainable. Transparent. Secure."}],["$","p",null,{"className":"text-base text-[#a1a1aa] leading-relaxed","children":"Agent0 is deeply integrated inside Dash0. You always see what the agent did, how it reasoned, and which telemetry powered the insight. No black boxes."}]]}],["$","div","Force Multiplier for Your Team",{"className":"bg-[#212121] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300 flex flex-col items-center text-center","children":[["$","div",null,{"className":"mb-8","children":["$","svg",null,{"viewBox":"0 0 50 50","className":"w-16 h-16","fill":"none","xmlns":"http://www.w3.org/2000/svg","children":[["$","path",null,{"d":"M10 35l8-12 6 8 6-16 6 10 4-6","stroke":"#f97316","strokeWidth":"3","strokeLinecap":"round","strokeLinejoin":"round"}],["$","circle",null,{"cx":"40","cy":"14","r":"6","fill":"#f97316"}],["$","path",null,{"d":"M37 14l2 2 4-4","stroke":"white","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round"}]]}]}],["$","h3",null,{"className":"text-xl font-bold text-white mb-4","children":"Force Multiplier for Your Team"}],["$","p",null,{"className":"text-base text-[#a1a1aa] leading-relaxed","children":"By removing troubleshooting bottlenecks and query barriers, Agent0 empowers every developer to act like a senior engineer — freeing experts to focus on deeper challenges."}]]}]]}]]}]}],["$","section",null,{"className":"py-24 border-b border-[#262626]","children":["$","div",null,{"className":"max-w-[1440px] mx-auto px-12","children":[["$","div",null,{"className":"text-center mb-16","children":[["$","h2",null,{"className":"text-4xl md:text-5xl font-bold text-white mb-6","children":["Meet the ",["$","span",null,{"className":"text-[#f97316]","children":"Agent0 Guild"}]]}],["$","p",null,{"className":"text-xl text-[#a1a1aa] max-w-[560px] mx-auto leading-relaxed","children":"Your built-in observability experts — each focused on a single mission."}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5","children":[["$","div","The Seeker",{"className":"bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center","style":{"borderTopColor":"#3b82f640"},"children":[["$","div",null,{"className":"mb-6 w-20 h-20 flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/seeker.svg","alt":"The Seeker","className":"w-full h-full object-contain"}]}],["$","span",null,{"className":"inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4","style":{"color":"#3b82f6","backgroundColor":"#3b82f615","border":"1px solid #3b82f630"},"children":"Troubleshooting \u0026 Incident Triage"}],["$","h3",null,{"className":"text-2xl font-bold text-white mb-3","children":"The Seeker"}],["$","p",null,{"className":"text-base italic text-[#8b8b95] leading-relaxed mb-4","children":["\\"","No anomaly can hide. The Seeker traces every ripple in your system, hunts down root causes, and surfaces what others can\'t see.","\\""]}],["$","p",null,{"className":"text-base text-[#a1a1aa] leading-relaxed","children":"The Seeker acts as your on-call wingman — surfacing what others can\'t see and guiding you through incident triage with speed and precision."}]]}],["$","div","The Oracle",{"className":"bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center","style":{"borderTopColor":"#f9731640"},"children":[["$","div",null,{"className":"mb-6 w-20 h-20 flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/oracle.svg","alt":"The Oracle","className":"w-full h-full object-contain"}]}],["$","span",null,{"className":"inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4","style":{"color":"#f97316","backgroundColor":"#f9731615","border":"1px solid #f9731630"},"children":"PromQL Query Assistant"}],["$","h3",null,{"className":"text-2xl font-bold text-white mb-3","children":"The Oracle"}],["$","p",null,{"className":"text-base italic text-[#8b8b95] leading-relaxed mb-4","children":["\\"","The Oracle speaks the language of PromQL fluently. Ask, and it reveals the logic behind the query — with clarity and insight.","\\""]}],["$","p",null,{"className":"text-base text-[#a1a1aa] leading-relaxed","children":"Ask in plain language. Get valid, optimized PromQL queries instantly. The Oracle explains query logic and helps you move from guesswork to precision."}]]}],["$","div","The Pathfinder",{"className":"bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center","style":{"borderTopColor":"#22c55e40"},"children":[["$","div",null,{"className":"mb-6 w-20 h-20 flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/pathfinder.svg","alt":"The Pathfinder","className":"w-full h-full object-contain"}]}],["$","span",null,{"className":"inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4","style":{"color":"#22c55e","backgroundColor":"#22c55e15","border":"1px solid #22c55e30"},"children":"Onboarding \u0026 Instrumentation Guide"}],["$","h3",null,{"className":"text-2xl font-bold text-white mb-3","children":"The Pathfinder"}],["$","p",null,{"className":"text-base italic text-[#8b8b95] leading-relaxed mb-4","children":["\\"","A trusted guide for every new journey. The Pathfinder leads your apps into the world of OpenTelemetry and Dash0 — step by step.","\\""]}],["$","p",null,{"className":"text-base text-[#a1a1aa] leading-relaxed","children":"Instrument apps and connect telemetry in minutes — not weeks. The Pathfinder walks you step-by-step through OpenTelemetry setup and Dash0 integration."}]]}],["$","div","The Threadweaver",{"className":"bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center","style":{"borderTopColor":"#14b8a640"},"children":[["$","div",null,{"className":"mb-6 w-20 h-20 flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/threadweaver.svg","alt":"The Threadweaver","className":"w-full h-full object-contain"}]}],["$","span",null,{"className":"inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4","style":{"color":"#14b8a6","backgroundColor":"#14b8a615","border":"1px solid #14b8a630"},"children":"Trace Analyst \u0026 Narrative Builder"}],["$","h3",null,{"className":"text-2xl font-bold text-white mb-3","children":"The Threadweaver"}],["$","p",null,{"className":"text-base italic text-[#8b8b95] leading-relaxed mb-4","children":["\\"","The Threadweaver connects every span like strands of fate — revealing how your system\'s stories truly unfold.","\\""]}],["$","p",null,{"className":"text-base text-[#a1a1aa] leading-relaxed","children":"Weave spans into understanding. The Threadweaver transforms complex traces into clear cause-and-effect chains, uncovering bottlenecks and hidden dependencies."}]]}],["$","div","The Artist",{"className":"bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center","style":{"borderTopColor":"#94a3b840"},"children":[["$","div",null,{"className":"mb-6 w-20 h-20 flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/artist.svg","alt":"The Artist","className":"w-full h-full object-contain"}]}],["$","span",null,{"className":"inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4","style":{"color":"#94a3b8","backgroundColor":"#94a3b815","border":"1px solid #94a3b830"},"children":"Dashboard \u0026 Alert Builder"}],["$","h3",null,{"className":"text-2xl font-bold text-white mb-3","children":"The Artist"}],["$","p",null,{"className":"text-base italic text-[#8b8b95] leading-relaxed mb-4","children":["\\"","The Artist shapes data into vision. With steady hands, it designs dashboards and creates alert rules that bring order to the chaos.","\\""]}],["$","p",null,{"className":"text-base text-[#a1a1aa] leading-relaxed","children":"Turn signals into stories. The Artist designs dashboards and alert rules that bring clarity to the most complex systems — automatically."}]]}],["$","div","The Lookout",{"className":"bg-[#111111] border border-[#262626] hover:border-[#2a2a2a] rounded-2xl p-8 transition-colors duration-300 flex flex-col items-center text-center","style":{"borderTopColor":"#125f1240"},"children":[["$","div",null,{"className":"mb-6 w-20 h-20 flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/lookout.svg","alt":"The Lookout","className":"w-full h-full object-contain"}]}],["$","span",null,{"className":"inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4","style":{"color":"#709f70","backgroundColor":"#125f1215","border":"1px solid #125f1230"},"children":"Web Performance \u0026 User Experience"}],["$","h3",null,{"className":"text-2xl font-bold text-white mb-3","children":"The Lookout"}],["$","p",null,{"className":"text-base italic text-[#8b8b95] leading-relaxed mb-4","children":["\\"","The Lookout watches over every user\'s journey — tracking Web Vitals, JavaScript errors, and session flows to reveal what real users experience.","\\""]}],["$","p",null,{"className":"text-base text-[#a1a1aa] leading-relaxed","children":"Transform web analytics into actionable insights. The Lookout analyzes frontend performance, correlates user behavior with backend issues, and helps you optimize experiences."}]]}]]}]]}]}],["$","section",null,{"className":"relative py-24 border-b border-[#1f1f1f] bg-[#0d0d0d] overflow-hidden","children":[["$","div",null,{"className":"absolute inset-0 pointer-events-none","children":["$","svg",null,{"className":"absolute inset-0 w-full h-full ","xmlns":"http://www.w3.org/2000/svg","preserveAspectRatio":"xMidYMid slice","children":[["$","defs",null,{"children":["$","pattern",null,{"id":"circuit-pattern","x":"0","y":"0","width":"1000","height":"1000","patternUnits":"userSpaceOnUse","children":[["$","path",null,{"d":"M 160 240 L 480 240 Q 500 240 500 260 L 500 400 Q 500 420 520 420 L 820 420","stroke":"#2a2a2a","strokeWidth":"3","fill":"none"}],["$","path",null,{"d":"M 390 820 L 390 620 Q 390 600 410 600 L 800 600 Q 820 600 820 580 L 820 460","stroke":"#2a2a2a","strokeWidth":"3","fill":"none"}],["$","path",null,{"d":"M 390 820 L 920 820 Q 940 820 940 840 L 940 890","stroke":"#2a2a2a","strokeWidth":"3","fill":"none"}],["$","rect",null,{"x":"120","y":"200","width":"80","height":"80","rx":"5","fill":"#3a3a3a"}],["$","rect",null,{"x":"780","y":"380","width":"80","height":"80","rx":"5","fill":"#3a3a3a"}],["$","rect",null,{"x":"350","y":"780","width":"80","height":"80","rx":"5","fill":"#3a3a3a"}],["$","rect",null,{"x":"900","y":"850","width":"80","height":"80","rx":"5","fill":"#3a3a3a"}]]}]}],["$","rect",null,{"width":"100%","height":"100%","fill":"url(#circuit-pattern)"}]]}]}],["$","div",null,{"className":"relative z-10 max-w-[1440px] mx-auto px-12","children":[["$","div",null,{"className":"text-center mb-16","children":[["$","h2",null,{"className":"text-4xl md:text-5xl font-bold text-white mb-6","children":["Agent0 ",["$","span",null,{"className":"text-[#f97316]","children":"in Action"}]]}],["$","p",null,{"className":"text-xl text-[#a1a1aa] max-w-[560px] mx-auto leading-relaxed","children":"Agent0 turns observability from looking for a needle in a haystack into a guided experience. Each agent brings specialized expertise — helping you troubleshoot, query, instrument, and visualize faster than ever."}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L7","The Seeker",{"delay":0,"children":["$","div",null,{"className":"group flex flex-col lg:flex-row items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300","children":[["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-4 mb-6","children":[["$","div",null,{"className":"w-14 h-14 rounded-xl flex items-center justify-center shrink-0","style":{"backgroundColor":"#3b82f620","border":"1px solid #3b82f640"},"children":["$","img",null,{"src":"/dash0-website/images/agents/seeker.svg","alt":"The Seeker","className":"w-10 h-10 object-contain"}]}],["$","div",null,{"children":[["$","p",null,{"className":"text-sm font-semibold tracking-widest uppercase","style":{"color":"#3b82f6"},"children":"The Seeker"}],["$","h3",null,{"className":"text-2xl font-bold text-white","children":"Root Cause in Seconds"}]]}]]}],["$","p",null,{"className":"text-lg text-[#a1a1aa] leading-relaxed","children":"An engineer receives an alert and asks Agent0 what\'s going on. The Seeker analyzes recent traces, logs, and metrics to explain the issue — surfacing the affected service, related changes, and likely root cause in moments."}]]}],["$","div",null,{"className":"flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]","style":{"--agent-color":"#3b82f6","--agent-glow":"#3b82f640"},"children":["$","div",null,{"className":"relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/seeker-action.png","alt":"The Seeker — Root Cause in Seconds","className":"w-full h-full object-cover object-top"}]}]}]]}]}],["$","$L7","The Oracle",{"delay":0.05,"children":["$","div",null,{"className":"group flex flex-col lg:flex-row-reverse items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300","children":[["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-4 mb-6","children":[["$","div",null,{"className":"w-14 h-14 rounded-xl flex items-center justify-center shrink-0","style":{"backgroundColor":"#f9731620","border":"1px solid #f9731640"},"children":["$","img",null,{"src":"/dash0-website/images/agents/oracle.svg","alt":"The Oracle","className":"w-10 h-10 object-contain"}]}],["$","div",null,{"children":[["$","p",null,{"className":"text-sm font-semibold tracking-widest uppercase","style":{"color":"#f97316"},"children":"The Oracle"}],["$","h3",null,{"className":"text-2xl font-bold text-white","children":"From Question to Query"}]]}]]}],["$","p",null,{"className":"text-lg text-[#a1a1aa] leading-relaxed","children":"An engineer types: \\"Show me 95th percentile latency for checkout over the last hour.\\" The Oracle instantly generates the correct PromQL, explains what it does, and shows the resulting graph — no syntax errors, no guesswork."}]]}],["$","div",null,{"className":"flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]","style":{"--agent-color":"#f97316","--agent-glow":"#f9731640"},"children":["$","div",null,{"className":"relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/oracle-action.png","alt":"The Oracle — From Question to Query","className":"w-full h-full object-cover object-top"}]}]}]]}]}],["$","$L7","The Pathfinder",{"delay":0.1,"children":["$","div",null,{"className":"group flex flex-col lg:flex-row items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300","children":[["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-4 mb-6","children":[["$","div",null,{"className":"w-14 h-14 rounded-xl flex items-center justify-center shrink-0","style":{"backgroundColor":"#22c55e20","border":"1px solid #22c55e40"},"children":["$","img",null,{"src":"/dash0-website/images/agents/pathfinder.svg","alt":"The Pathfinder","className":"w-10 h-10 object-contain"}]}],["$","div",null,{"children":[["$","p",null,{"className":"text-sm font-semibold tracking-widest uppercase","style":{"color":"#22c55e"},"children":"The Pathfinder"}],["$","h3",null,{"className":"text-2xl font-bold text-white","children":"Onboard in Minutes"}]]}]]}],["$","p",null,{"className":"text-lg text-[#a1a1aa] leading-relaxed","children":"A developer asks Agent0 how to instrument a new Java service. The Pathfinder uses Dash0\'s integrations and documentation to provide clear, step-by-step guidance — helping the team get telemetry flowing in minutes, not hours."}]]}],["$","div",null,{"className":"flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]","style":{"--agent-color":"#22c55e","--agent-glow":"#22c55e40"},"children":["$","div",null,{"className":"relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/pathfinder-action.png","alt":"The Pathfinder — Onboard in Minutes","className":"w-full h-full object-cover object-top"}]}]}]]}]}],["$","$L7","The Threadweaver",{"delay":0.15000000000000002,"children":["$","div",null,{"className":"group flex flex-col lg:flex-row-reverse items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300","children":[["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-4 mb-6","children":[["$","div",null,{"className":"w-14 h-14 rounded-xl flex items-center justify-center shrink-0","style":{"backgroundColor":"#14b8a620","border":"1px solid #14b8a640"},"children":["$","img",null,{"src":"/dash0-website/images/agents/threadweaver.svg","alt":"The Threadweaver","className":"w-10 h-10 object-contain"}]}],["$","div",null,{"children":[["$","p",null,{"className":"text-sm font-semibold tracking-widest uppercase","style":{"color":"#14b8a6"},"children":"The Threadweaver"}],["$","h3",null,{"className":"text-2xl font-bold text-white","children":"Stories Behind the Spans"}]]}]]}],["$","p",null,{"className":"text-lg text-[#a1a1aa] leading-relaxed","children":"A developer wonders why checkout latency keeps spiking intermittently. They ask Agent0 to analyze recent traces. The Threadweaver stitches together the full journey across services, highlighting where the slowdown begins."}]]}],["$","div",null,{"className":"flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]","style":{"--agent-color":"#14b8a6","--agent-glow":"#14b8a640"},"children":["$","div",null,{"className":"relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/threadweaver-action.png","alt":"The Threadweaver — Stories Behind the Spans","className":"w-full h-full object-cover object-top"}]}]}]]}]}],["$","$L7","The Artist",{"delay":0.2,"children":["$","div",null,{"className":"group flex flex-col lg:flex-row items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300","children":[["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-4 mb-6","children":[["$","div",null,{"className":"w-14 h-14 rounded-xl flex items-center justify-center shrink-0","style":{"backgroundColor":"#94a3b820","border":"1px solid #94a3b840"},"children":["$","img",null,{"src":"/dash0-website/images/agents/artist.svg","alt":"The Artist","className":"w-10 h-10 object-contain"}]}],["$","div",null,{"children":[["$","p",null,{"className":"text-sm font-semibold tracking-widest uppercase","style":{"color":"#94a3b8"},"children":"The Artist"}],["$","h3",null,{"className":"text-2xl font-bold text-white","children":"Dashboards That Build Themselves"}]]}]]}],["$","p",null,{"className":"text-lg text-[#a1a1aa] leading-relaxed","children":"A developer asks Agent0 to \\"Create a dashboard and alerts for my ProductCatalog service.\\" The Artist analyzes existing telemetry, then generates a clean, best-practice dashboard with latency, error rate, and throughput."}]]}],["$","div",null,{"className":"flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]","style":{"--agent-color":"#94a3b8","--agent-glow":"#94a3b840"},"children":["$","div",null,{"className":"relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/artist-action.png","alt":"The Artist — Dashboards That Build Themselves","className":"w-full h-full object-cover object-top"}]}]}]]}]}],["$","$L7","The Lookout",{"delay":0.25,"children":["$","div",null,{"className":"group flex flex-col lg:flex-row-reverse items-center gap-12 bg-[#111111] border border-[#1f1f1f] hover:border-[#2a2a2a] rounded-2xl p-10 transition-colors duration-300","children":[["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-4 mb-6","children":[["$","div",null,{"className":"w-14 h-14 rounded-xl flex items-center justify-center shrink-0","style":{"backgroundColor":"#125f1220","border":"1px solid #125f1240"},"children":["$","img",null,{"src":"/dash0-website/images/agents/lookout.svg","alt":"The Lookout","className":"w-10 h-10 object-contain"}]}],["$","div",null,{"children":[["$","p",null,{"className":"text-sm font-semibold tracking-widest uppercase","style":{"color":"#598f59"},"children":"The Lookout"}],["$","h3",null,{"className":"text-2xl font-bold text-white","children":"Find What\'s Breaking User Experience"}]]}]]}],["$","p",null,{"className":"text-lg text-[#a1a1aa] leading-relaxed","children":"A team notices rising abandonment rates. They ask Agent0 which sessions had performance issues during checkout. The Lookout surfaces sessions with poor Web Vitals, linking frontend slowness to a payment API bottleneck."}]]}],["$","div",null,{"className":"flex-1 w-full rounded-xl overflow-hidden border-2 border-[#2a2a2a] transition-all duration-300 group-hover:border-[var(--agent-color)] group-hover:shadow-[0_0_40px_var(--agent-glow)]","style":{"--agent-color":"#125f12","--agent-glow":"#125f1240"},"children":["$","div",null,{"className":"relative w-full aspect-[4/3] bg-[#0d0d0d] flex items-center justify-center","children":["$","img",null,{"src":"/dash0-website/images/agents/lookout-action.png","alt":"The Lookout — Find What\'s Breaking User Experience","className":"w-full h-full object-cover object-top"}]}]}]]}]}]]}]]}]]}],["$","section",null,{"className":"relative py-32 overflow-hidden","children":[["$","div",null,{"className":"absolute inset-0 pointer-events-none overflow-hidden","children":[["$","$L4",null,{}],["$","div",null,{"className":"absolute inset-0 bg-[radial-gradient(ellipse_60%_70%_at_50%_50%,transparent_20%,#0a0a0a_80%)]"}],["$","div",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#f97316]/8 rounded-full blur-[120px]"}]]}],["$","div",null,{"className":"relative z-10 max-w-[1440px] mx-auto px-12 text-center","children":[["$","div",null,{"className":"inline-flex items-center gap-2 bg-[#f97316]/10 border border-[#f97316]/20 rounded-full px-4 py-1.5 mb-8","children":[["$","span",null,{"className":"w-1.5 h-1.5 rounded-full bg-[#f97316] animate-pulse"}],["$","span",null,{"className":"text-sm text-[#f97316] font-medium","children":"Available now in Beta"}]]}],["$","h2",null,{"className":"text-4xl md:text-6xl font-bold text-white leading-[1.1] mb-6","children":["Agentic Observability"," ",["$","span",null,{"className":"text-[#f97316]","children":"Starts Here"}]]}],["$","p",null,{"className":"text-xl text-[#a1a1aa] leading-relaxed mb-10 max-w-[640px] mx-auto","children":"Join the next chapter of observability — where data works with you, not against you. Agent0 is available today in Beta for all Dash0 users, at no extra cost."}],["$","div",null,{"className":"flex flex-col sm:flex-row items-center justify-center gap-4 mb-8","children":[["$","$L5",null,{"href":"#","className":"btn-gradient flex items-center gap-2 text-white font-semibold px-8 py-3.5 rounded-xl text-base shadow-lg shadow-orange-500/20","children":["Try Agent0 Free",["$","$L6",null,{"iconNode":"$8","className":"lucide-arrow-right","size":16}]]}],["$","$L5",null,{"href":"#","className":"flex items-center gap-2 text-[#a1a1aa] hover:text-white bg-[#0a0a0a] border border-[#2a2a2a] hover:border-[#3a3a3a] px-8 py-3.5 rounded-xl text-base transition-all","children":"Book a Demo"}]]}],["$","p",null,{"className":"font-medium text-[#8b8b95]","children":"No credit card required · Built directly into Dash0 · Cancel anytime"}]]}]]}]]}],null],null],null]},[null,["$","$Ld",null,{"parallelRouterKey":"children","segmentPath":["children","ai-sre-agent","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/dash0-website/_next/static/css/cd0f4a6938998407.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"bg-[#0a0a0a] text-white antialiased","children":[["$","$Lf",null,{}],["$","$Ld",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","footer",null,{"className":"border-t border-[#1f1f1f] bg-[#0a0a0a] pt-20 pb-10 px-2","children":["$","div",null,{"className":"w-full px-6","children":[["$","div",null,{"className":"grid grid-cols-2 md:grid-cols-5 gap-12 pb-14 border-b border-[#262626]","children":[["$","div",null,{"className":"col-span-2 md:col-span-1","children":[["$","span",null,{"className":"text-white font-semibold text-xl tracking-tight","children":["dash",["$","span",null,{"className":"text-[#f97316]","children":"0"}]]}],["$","p",null,{"className":"mt-4 text-base text-[#8b8b95] leading-relaxed","children":"OpenTelemetry-native observability. Simple to switch. Built to last."}],["$","div",null,{"className":"flex items-center gap-5 mt-6","children":[["$","a","GitHub",{"href":"#","className":"text-base text-[#8b8b95] hover:text-white transition-colors","children":"GitHub"}],["$","a","LinkedIn",{"href":"#","className":"text-base text-[#8b8b95] hover:text-white transition-colors","children":"LinkedIn"}],["$","a","X",{"href":"#","className":"text-base text-[#8b8b95] hover:text-white transition-colors","children":"X"}],["$","a","YouTube",{"href":"#","className":"text-base text-[#8b8b95] hover:text-white transition-colors","children":"YouTube"}]]}]]}],[["$","div","Resources",{"children":[["$","p",null,{"className":"text-sm font-semibold tracking-widest text-[#8b8b95] uppercase mb-5","children":"Resources"}],["$","ul",null,{"className":"space-y-3.5","children":[["$","li","Pricing",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Pricing"}]}],["$","li","Blog",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Blog"}]}],["$","li","Guides",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Guides"}]}],["$","li","Knowledge",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Knowledge"}]}],["$","li","Comparisons",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Comparisons"}]}],["$","li","Documentation",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Documentation"}]}],["$","li","Changelog",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Changelog"}]}]]}]]}],["$","div","Company",{"children":[["$","p",null,{"className":"text-sm font-semibold tracking-widest text-[#8b8b95] uppercase mb-5","children":"Company"}],["$","ul",null,{"className":"space-y-3.5","children":[["$","li","Our Team",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Our Team"}]}],["$","li","Careers",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Careers"}]}],["$","li","Trust Center",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Trust Center"}]}],["$","li","Security",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Security"}]}]]}]]}],["$","div","Compare",{"children":[["$","p",null,{"className":"text-sm font-semibold tracking-widest text-[#8b8b95] uppercase mb-5","children":"Compare"}],["$","ul",null,{"className":"space-y-3.5","children":[["$","li","vs Datadog",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"vs Datadog"}]}],["$","li","vs Grafana",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"vs Grafana"}]}],["$","li","vs Dynatrace",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"vs Dynatrace"}]}],["$","li","vs New Relic",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"vs New Relic"}]}],["$","li","vs Elastic",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"vs Elastic"}]}],["$","li","vs Honeycomb",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"vs Honeycomb"}]}],["$","li","vs Splunk",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"vs Splunk"}]}]]}]]}],["$","div","Contact",{"children":[["$","p",null,{"className":"text-sm font-semibold tracking-widest text-[#8b8b95] uppercase mb-5","children":"Contact"}],["$","ul",null,{"className":"space-y-3.5","children":[["$","li","Contact us",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Contact us"}]}],["$","li","Newsletter",{"children":["$","$L5",null,{"href":"#","className":"text-base text-white hover:text-[#a1a1aa] transition-colors","children":"Newsletter"}]}]]}]]}]]]}],["$","div",null,{"className":"flex flex-col md:flex-row items-center justify-between gap-4 pt-10","children":[["$","p",null,{"className":"text-base text-[#8b8b95]","children":"©2026 Dash0 Inc."}],["$","div",null,{"className":"flex items-center gap-8","children":[["$","$L5","Terms and Conditions",{"href":"#","className":"text-base text-[#8b8b95] hover:text-white transition-colors","children":"Terms and Conditions"}],["$","$L5","Privacy Policy",{"href":"#","className":"text-base text-[#8b8b95] hover:text-white transition-colors","children":"Privacy Policy"}],["$","$L5","Data Processing Agreement",{"href":"#","className":"text-base text-[#8b8b95] hover:text-white transition-colors","children":"Data Processing Agreement"}]]}]]}]]}]}]]}]}]],null],null],"couldBeIntercepted":false,"initialHead":[null,"$L10"],"globalErrorComponent":"$11","missingSlots":"$W12"}]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '10:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Agent0 — AI SRE Agents for Observability · Dash0"}],["$","meta","3",{"name":"description","content":"Meet Agent0 — Dash0\'s agentic AI platform. A team of specialized AI agents for incident triage, query building, instrumentation, and more."}],["$","meta","4",{"name":"author","content":"Dash0"}],["$","meta","5",{"name":"keywords","content":"observability,opentelemetry,logs,metrics,traces,monitoring,apm,promql,dash0"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"property":"og:title","content":"Agent0 — AI SRE Agents for Observability"}],["$","meta","8",{"property":"og:description","content":"A team of specialized AI agents — built directly into Dash0 — that transform how engineers work with observability."}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Dash0 — OpenTelemetry-Native Observability"}],["$","meta","11",{"name":"twitter:description","content":"Logs, metrics, and traces — simple to set up, simple to scale."}],["$","link","12",{"rel":"icon","href":"/dash0-website/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]\n3:null\n',
+      ]);
+    </script>
+  </body>
+</html>

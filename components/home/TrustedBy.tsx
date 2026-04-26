@@ -17,7 +17,7 @@ export default function TrustedBy() {
     <section className="py-16 border-t border-[#262626]">
       <div className="max-w-[1440px] mx-auto px-12">
         {/* Label */}
-        <p className="text-center text-lg md:text-xl font-semibold tracking-widest text-[#71717a] uppercase mb-10">
+        <p className="text-center text-lg md:text-xl font-semibold tracking-widest text-[#8b8b95] uppercase mb-10">
           Trusted by engineering teams at
         </p>
 
@@ -33,7 +33,7 @@ export default function TrustedBy() {
             {[...companies, ...companies].map((company, i) => (
               <span
                 key={i}
-                className="text-[#71717a] font-semibold text-base whitespace-nowrap hover:text-[#a1a1aa] transition-colors cursor-default"
+                className="text-[#8b8b95] font-semibold text-base whitespace-nowrap hover:text-[#a1a1aa] transition-colors cursor-default"
               >
                 {company}
               </span>

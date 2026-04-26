@@ -53,7 +53,7 @@ export default function AgentCTA() {
         </div>
 
         {/* Trust line */}
-        <p className="font-medium text-[#71717a]">
+        <p className="font-medium text-[#8b8b95]">
           No credit card required · Built directly into Dash0 · Cancel anytime
         </p>
       </div>
