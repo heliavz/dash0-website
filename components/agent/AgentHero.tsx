@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import ArrowRight from "lucide-react/dist/esm/icons/arrow-right.mjs";
 import DotGrid from "@/components/ui/LazyDotGrid";
 
 export default function AgentHero() {

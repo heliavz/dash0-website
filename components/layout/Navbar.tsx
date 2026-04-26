@@ -2,7 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Search } from "lucide-react";
+import Menu from "lucide-react/dist/esm/icons/menu.mjs";
+import X from "lucide-react/dist/esm/icons/x.mjs";
+import ChevronDown from "lucide-react/dist/esm/icons/chevron-down.mjs";
+import Search from "lucide-react/dist/esm/icons/search.mjs";
 
 const productLinks = {
   useCases: [
